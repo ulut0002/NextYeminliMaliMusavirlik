@@ -1,0 +1,34 @@
+{
+  "generic": {},
+  "nav": {
+    "home": { "title": "首页" },
+    "corporate": {
+      "title": "公司",
+      "about": { "title": "关于我们", "subText": "" },
+      "ourTeam": { "title": "我们的团队", "subText": "" },
+      "missionVision": { "title": "使命与愿景", "subText": "" },
+      "getQuote": { "title": "获取报价", "subText": "" },
+      "ourDirectors": { "title": "我们的董事", "subText": "" },
+      "foundationDocuments": { "title": "基础文件", "subText": "" },
+      "transparencyReports": { "title": "透明度报告", "subText": "" }
+    },
+    "services": {
+      "title": "我们的服务"
+    },
+    "industries": {
+      "title": "行业"
+    },
+    "publications": {
+      "title": "出版物"
+    },
+    "tools": {
+      "title": "工具"
+    },
+    "contactUs": {
+      "title": "联系我们"
+    }
+  },
+  "Index": {
+    "title": "Next 注册会计师"
+  }
+}

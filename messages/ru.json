@@ -1,0 +1,37 @@
+{
+  "generic": {},
+  "nav": {
+    "home": { "title": "Главная" },
+    "corporate": {
+      "title": "Корпоративная",
+      "about": { "title": "О нас", "subText": "" },
+      "ourTeam": { "title": "Наша команда", "subText": "" },
+      "missionVision": { "title": "Миссия и видение", "subText": "" },
+      "getQuote": { "title": "Запросить котировку", "subText": "" },
+      "ourDirectors": { "title": "Наши руководители", "subText": "" },
+      "foundationDocuments": {
+        "title": "Учредительные документы",
+        "subText": ""
+      },
+      "transparencyReports": { "title": "Отчеты о прозрачности", "subText": "" }
+    },
+    "services": {
+      "title": "Наши услуги"
+    },
+    "industries": {
+      "title": "Отрасли"
+    },
+    "publications": {
+      "title": "Публикации"
+    },
+    "tools": {
+      "title": "Инструменты"
+    },
+    "contactUs": {
+      "title": "Связаться с нами"
+    }
+  },
+  "index": {
+    "title": "Next - Сертифицированные бухгалтеры"
+  }
+}

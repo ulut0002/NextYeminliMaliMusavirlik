@@ -1,0 +1,105 @@
+{
+  "generic": {},
+  "nav": {
+    "home": { "title": "Home" },
+    "corporate": {
+      "title": "Kurumsal",
+      "about": {
+        "title": "Hakkımızda",
+        "description": "Firmamızın tarihçesi, kültürü ve değerleri hakkında bilgi edinin."
+      },
+      "ourTeam": {
+        "title": "Ekibimiz",
+        "description": "Profesyonel ekibimizi tanıyın ve uzmanlıkları hakkında daha fazla öğrenin."
+      },
+      "missionVision": {
+        "title": "Misyon - Vizyon",
+        "description": "Misyonumuzu ve vizyonumuzu keşfedin ve gelecek planlarımızı görün."
+      },
+      "getQuote": {
+        "title": "Fiyat Talebi",
+        "description": "Hizmetlerimizle ilgili detaylı fiyat bilgisi ve teklif alın."
+      },
+      "ourDirectors": {
+        "title": "Yöneticilerimiz",
+        "description": "Yönetim kadromuzu ve sektördeki deneyimlerini öğrenin."
+      },
+      "foundationDocuments": {
+        "title": "Kuruluş Belgeleri",
+        "description": "Firmamızın resmi kuruluş belgelerine ve sertifikalarına göz atın."
+      },
+      "transparencyReports": {
+        "title": "Şeffaflık Raporları",
+        "description": "Firmamızın şeffaflık ve hesap verilebilirlik raporlarını inceleyin."
+      }
+    },
+    "services": {
+      "title": "Hizmetlerimiz",
+      "taxes": {
+        "title": "Vergi Danışmanlığı",
+        "description": "Vergi danışmanlığı hizmetlerimiz hakkında detaylı bilgi alın."
+      },
+      "audit": {
+        "title": "Denetim",
+        "description": "Denetim hizmetlerimiz hakkında detaylı bilgi alın."
+      },
+      "advisory": {
+        "title": "Danışmanlık",
+        "description": "Danışmanlık hizmetlerimiz hakkında detaylı bilgi alın."
+      },
+      "other": {
+        "title": "Diğer Hizmetler",
+        "description": "Diğer hizmetlerimiz hakkında detaylı bilgi alın."
+      }
+    },
+    "industries": {
+      "title": "Sektörler",
+      "industry": {
+        "title": "Üretim",
+        "description": "Üretim sektörleri hakkında detaylı bilgi alın."
+      },
+      "energy": {
+        "title": "Enerji",
+        "description": "Enerji sektörü hakkında detaylı bilgi alın."
+      },
+      "financial": {
+        "title": "Finans",
+        "description": "Finans sektörü hakkında detaylı bilgi alın."
+      },
+      "construction": {
+        "title": "İnşaat",
+        "description": "İnşaat sektörü hakkında detaylı bilgi alın."
+      },
+      "pharmaceutical": {
+        "title": "İlaç",
+        "description": "İlaç sektörü hakkında detaylı bilgi alın."
+      },
+      "technology": {
+        "title": "Teknoloji",
+        "description": "Teknoloji sektörü hakkında detaylı bilgi alın."
+      }
+    },
+    "publications": {
+      "title": "Yayınlar",
+      "news": {
+        "title": "Haberler",
+        "description": "Firmamızın son haberlerini ve duyurularını inceleyin."
+      },
+      "circulars": {
+        "title": "Sirküler",
+        "description": "Firmamızın yayınladığı sirkülerleri inceleyin."
+      }
+    },
+
+    "tools": {
+      "title": "Araçlar"
+    },
+
+    "contactUs": {
+      "title": "İletişim"
+    }
+  },
+  "index": {
+    "title": "Next Yeminli Mali Müşavirlik"
+  }
+}

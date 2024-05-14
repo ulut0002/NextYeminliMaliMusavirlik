@@ -1,0 +1,34 @@
+{
+  "generic": {},
+  "nav": {
+    "home": { "title": "الرئيسية" },
+    "corporate": {
+      "title": "الشركات",
+      "about": { "title": "معلومات عنا", "subText": "" },
+      "ourTeam": { "title": "فريقنا", "subText": "" },
+      "missionVision": { "title": "المهمة والرؤية", "subText": "" },
+      "getQuote": { "title": "طلب تسعيرة", "subText": "" },
+      "ourDirectors": { "title": "مديرينا", "subText": "" },
+      "foundationDocuments": { "title": "وثائق التأسيس", "subText": "" },
+      "transparencyReports": { "title": "تقارير الشفافية", "subText": "" }
+    },
+    "services": {
+      "title": "خدماتنا"
+    },
+    "industries": {
+      "title": "الصناعات"
+    },
+    "publications": {
+      "title": "المنشورات"
+    },
+    "tools": {
+      "title": "الأدوات"
+    },
+    "contactUs": {
+      "title": "اتصل بنا"
+    }
+  },
+  "index": {
+    "title": "شركة المحاسبين القانونيين Next"
+  }
+}

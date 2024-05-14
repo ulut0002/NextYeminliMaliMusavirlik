@@ -1,0 +1,34 @@
+{
+  "generic": {},
+  "nav": {
+    "home": { "title": "Home" },
+    "corporate": {
+      "title": "Corporate",
+      "about": { "title": "About Us", "subText": "" },
+      "ourTeam": { "title": "Our Team", "subText": "" },
+      "missionVision": { "title": "Mission - Vision", "subText": "" },
+      "getQuote": { "title": "Request a Quote", "subText": "" },
+      "ourDirectors": { "title": "Our Directors", "subText": "" },
+      "foundationDocuments": { "title": "Foundation Documents", "subText": "" },
+      "transparencyReports": { "title": "Transparency Reports", "subText": "" }
+    },
+    "services": {
+      "title": "Our Services"
+    },
+    "industries": {
+      "title": "Industries"
+    },
+    "publications": {
+      "title": "Publications"
+    },
+    "tools": {
+      "title": "Tools"
+    },
+    "contactUs": {
+      "title": "Contact Us"
+    }
+  },
+  "index": {
+    "title": "Next Certified Public Accountants"
+  }
+}

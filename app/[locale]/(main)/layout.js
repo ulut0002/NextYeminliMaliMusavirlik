@@ -1,12 +1,22 @@
-import { Inter } from "next/font/google";
+import { Inter, IBM_Plex_Sans, IBM_Plex_Sans_Arabic } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider, useLocale } from "next-intl";
 import { ThemeProvider } from "@/components/MaterialUI/MaterialUI";
-import MegaMenuDefault from "@/components/Nav/Nav";
 import NavServer from "@/components/Nav/NavServer";
-import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const ibmPlexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+});
+
+//IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif
 
 export const metadata = {
   title: "Create Next App",
@@ -15,13 +25,17 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const locale = useLocale();
+  // let classNameValue = `${ibmPlexSans.className} Helvetica Neue, Arial, sans-serif`;
+  // if (locale === "ar") {
+  //   classNameValue = `${ibmPlexSansArabic.className} Helvetica Neue, Arial, sans-serif`;
+  // }
+
   return (
     <NextIntlClientProvider>
       <ThemeProvider>
         <html lang={locale}>
           <body className={inter.className}>
             <NavServer />
-
             {children}
           </body>
         </html>

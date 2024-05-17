@@ -1,6 +1,11 @@
 import { useLocale } from "next-intl";
 
-export default function CirculerPage() {
+export default function CirculerPage({ breadcrumbs }) {
   const locale = useLocale();
-  return <div>CirculerPage in {locale}</div>;
+  return (
+    <div>
+      {breadcrumbs}
+      CirculerPage in {locale}
+    </div>
+  );
 }

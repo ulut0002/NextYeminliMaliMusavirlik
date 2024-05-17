@@ -1,6 +1,11 @@
 import { useLocale } from "next-intl";
 
-export default function ToolsMain() {
+export default function ToolsMain({ breadcrumbs }) {
   const locale = useLocale();
-  return <div>ToolsMain in {locale}</div>;
+  return (
+    <div>
+      {breadcrumbs}
+      ToolsMain in {locale}
+    </div>
+  );
 }

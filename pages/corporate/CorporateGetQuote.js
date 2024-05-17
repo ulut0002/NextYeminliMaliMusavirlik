@@ -1,6 +1,11 @@
 import { useLocale } from "next-intl";
 
-export default function CorporateGetQuote() {
+export default function CorporateGetQuote({ breadcrumbs }) {
   const locale = useLocale();
-  return <div>CorporateGetQuote in {locale}</div>;
+  return (
+    <div>
+      {breadcrumbs}
+      CorporateGetQuote in {locale}
+    </div>
+  );
 }

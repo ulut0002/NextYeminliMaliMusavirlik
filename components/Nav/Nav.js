@@ -32,11 +32,12 @@ import {
 import Link from "next/link";
 import { useLocale } from "next-intl";
 
-function NavListMenu({ menuItem }) {
+function NavListMenu({ menuItem, setOpenNav }) {
   const { subItems, columns = 1 } = menuItem;
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [columnCount, setColumnCount] = React.useState(columns);
 
   const renderItems = () => {
     if (!Array.isArray(subItems)) {
@@ -47,7 +48,13 @@ function NavListMenu({ menuItem }) {
       const { icon, text, description, path = "/", key } = subItem;
 
       return (
-        <Link href={path} key={key}>
+        <Link
+          href={path}
+          key={key}
+          onClick={() => {
+            setOpenNav(false);
+          }}
+        >
           <MenuItem className='flex items-center gap-3 rounded-lg'>
             {icon && (
               <div className='flex items-center justify-center rounded-lg p-2 '>
@@ -86,7 +93,12 @@ function NavListMenu({ menuItem }) {
     )
   ) {
     return (
-      <Link href={menuItem.path || "#"}>
+      <Link
+        href={menuItem.path || "#"}
+        onClick={() => {
+          setOpenNav(false);
+        }}
+      >
         <div>
           <Typography
             as='div'
@@ -102,6 +114,10 @@ function NavListMenu({ menuItem }) {
       </Link>
     );
   }
+
+  let ulClassName = `grid grid-cols-${
+    columnCount > 1 ? columnCount : 1
+  } gap-y-2 outline-none outline-0`;
 
   return (
     <React.Fragment>
@@ -137,13 +153,7 @@ function NavListMenu({ menuItem }) {
         </MenuHandler>
 
         <MenuList className='hidden max-w-screen-xl rounded-xl lg:block'>
-          <ul
-            className={`grid grid-cols-${
-              columns ? columns : 1
-            } gap-y-2 outline-none outline-0`}
-          >
-            {renderItems(menuItem.subItems)}
-          </ul>
+          <ul className={ulClassName}>{renderItems(menuItem.subItems)}</ul>
         </MenuList>
       </Menu>
       <div className='block lg:hidden'>
@@ -155,12 +165,14 @@ function NavListMenu({ menuItem }) {
   );
 }
 
-function NavList({ menuItems = [] }) {
+function NavList({ menuItems = [], setOpenNav }) {
   const locale = useLocale();
 
   return (
     <List className='mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1'>
-      <Typography
+      {/*
+  
+   <Typography
         as='a'
         href='/'
         variant='small'
@@ -171,8 +183,16 @@ function NavList({ menuItems = [] }) {
           Home ({locale})
         </ListItem>
       </Typography>
+  */}
+
       {menuItems.map((menuItem) => {
-        return <NavListMenu key={menuItem.key} menuItem={menuItem} />;
+        return (
+          <NavListMenu
+            key={menuItem.key}
+            menuItem={menuItem}
+            setOpenNav={setOpenNav}
+          />
+        );
       })}
       {/*
      <Typography
@@ -207,16 +227,18 @@ export default function MegaMenuDefault({ menuItems = [] }) {
   return (
     <Navbar className='mx-auto max-w-screen-2xl max-w-sc px-4 py-2 rounded-md'>
       <div className='flex items-center justify-between text-blue-gray-900'>
-        <Typography
-          as='a'
-          href='#'
-          variant='h6'
-          className='mr-4 cursor-pointer py-1.5 lg:ml-2'
-        >
-          Material Tailwind
-        </Typography>
+        <Link href='/'>
+          <Typography
+            as='div'
+            variant='h6'
+            className='mr-4 cursor-pointer py-1.5 lg:ml-2'
+          >
+            Material Tailwind
+          </Typography>
+        </Link>
+
         <div className='hidden lg:block'>
-          <NavList menuItems={menuItems} />
+          <NavList menuItems={menuItems} setOpenNav={setOpenNav} />
         </div>
         <IconButton
           variant='text'
@@ -232,7 +254,7 @@ export default function MegaMenuDefault({ menuItems = [] }) {
         </IconButton>
       </div>
       <Collapse open={openNav}>
-        <NavList menuItems={menuItems} />
+        <NavList menuItems={menuItems} setOpenNav={setOpenNav} />
       </Collapse>
     </Navbar>
   );

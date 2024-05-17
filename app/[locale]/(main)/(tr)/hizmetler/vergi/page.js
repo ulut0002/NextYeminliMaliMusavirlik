@@ -1,6 +1,19 @@
 import { NEXT_SERVICES } from "@/appConfig";
+import { getBreadcrumbData } from "@/lib/uiUtils";
 import ServiceDetailPage from "@/pages/services/ServiceDetailPage";
+import { ROUTES } from "@/siteConfig";
+import { useLocale, useTranslations } from "next-intl";
 
-export default function page() {
-  return <ServiceDetailPage service={NEXT_SERVICES.tax} />;
+export default function HizmetlerVergi() {
+  const t = useTranslations();
+  const locale = useLocale();
+
+  const breadcrumbs = getBreadcrumbData(
+    ROUTES.hizmetlerVergi.breadcrumbs,
+    locale,
+    t
+  );
+  return (
+    <ServiceDetailPage service={NEXT_SERVICES.tax} breadcrumbs={breadcrumbs} />
+  );
 }

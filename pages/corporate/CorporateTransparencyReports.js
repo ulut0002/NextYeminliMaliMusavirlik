@@ -1,6 +1,11 @@
 import { useLocale } from "next-intl";
 
-export default function CorporateTransparencyReports() {
+export default function CorporateTransparencyReports({ breadcrumbs }) {
   const locale = useLocale();
-  return <div>CorporateTransparencyReports in {locale}</div>;
+  return (
+    <div>
+      {breadcrumbs}
+      CorporateTransparencyReports in {locale}
+    </div>
+  );
 }

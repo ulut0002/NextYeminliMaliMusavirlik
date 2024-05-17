@@ -1,11 +1,11 @@
 import { useLocale } from "next-intl";
 
-export default function CorporateOurDirectors({ breadcrumbs }) {
+export default async function CorporateFoundingDocumentsPage({ breadcrumbs }) {
   const locale = useLocale();
   return (
     <div>
       {breadcrumbs}
-      <div>CorporateOurDirectors in {locale}</div>
+      CorporateFoundingDocuments in {locale}
     </div>
   );
 }

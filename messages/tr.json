@@ -1,7 +1,16 @@
 {
   "generic": {},
+  "meta": {
+    "home": {
+      "title": "Next Yeminli Mali Müşavirlik",
+      "description": "Next Yeminli Mali Müşavirlik, Türkiye'nin önde gelen mali müşavirlik firmalarından biridir. Next Yeminli Mali Müşavirlik, müşterilerine vergi danışmanlığı, denetim, danışmanlık ve diğer hizmetler sunmaktadır.",
+      "keywords": "Next Yeminli Mali Müşavirlik, mali müşavirlik, vergi danışmanlığı, denetim, danışmanlık, sektörler, yayınlar, araçlar, iletişim"
+    }
+  },
   "nav": {
-    "home": { "title": "Home" },
+    "home": {
+      "title": "Anasayfa"
+    },
     "corporate": {
       "title": "Kurumsal",
       "about": {

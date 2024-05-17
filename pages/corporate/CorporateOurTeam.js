@@ -1,6 +1,11 @@
 import { useLocale } from "next-intl";
 
-export default function CorporateOurTeam() {
+export default function CorporateOurTeam({ breadcrumbs }) {
   const locale = useLocale();
-  return <div>CorporateOurTeam in {locale}</div>;
+  return (
+    <div>
+      {breadcrumbs}
+      CorporateOurTeam in {locale}
+    </div>
+  );
 }

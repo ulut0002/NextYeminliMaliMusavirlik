@@ -1,6 +1,15 @@
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import { useLocale } from "next-intl";
 
-export default async function CorporateMain() {
+export default async function CorporateMain({ breadcrumbs }) {
   const locale = useLocale();
-  return <div>CorporateMain in {locale}</div>;
+
+  return (
+    <div>
+      {breadcrumbs}
+      <div>CorporateMain in {locale}</div>
+    </div>
+  );
 }
+
+// <Breadcrumb locale={locale} paths={breadcrumb}></Breadcrumb>

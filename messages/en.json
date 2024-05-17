@@ -1,7 +1,16 @@
 {
   "generic": {},
+  "meta": {
+    "home": {
+      "title": "Next Certified Public Accountants",
+      "description": "Next Certified Public Accountants is a firm of Chartered Accountants, established in 2010, with offices in Nairobi and Mombasa. We offer a wide range of services to our clients, including audit and assurance, tax, advisory, and consulting services.",
+      "keywords": "Next Certified Public Accountants, Next CPA, Next, CPA, Certified Public Accountants, Chartered Accountants, Nairobi, Mombasa, Kenya, East Africa, audit, assurance, tax, advisory, consulting"
+    }
+  },
   "nav": {
-    "home": { "title": "Home" },
+    "home": {
+      "title": "Home"
+    },
     "corporate": {
       "title": "Corporate",
       "about": { "title": "About Us", "subText": "" },

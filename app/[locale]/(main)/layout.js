@@ -6,6 +6,8 @@ import NavServer from "@/components/Nav/NavServer";
 import Head from "next/head";
 import { getTranslations } from "next-intl/server";
 import { createMetadata } from "@/lib/utils";
+import { LOCALE_TO_DIRECTION } from "@/i18n";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,10 +50,15 @@ export default async function RootLayout({ children }) {
   return (
     <NextIntlClientProvider>
       <ThemeProvider>
-        <html lang={locale}>
-          <body className={classNameValue}>
-            <NavServer />
-            {children}
+        <html lang={locale} dir={LOCALE_TO_DIRECTION[locale] || "ltr"}>
+          <body className={`${classNameValue} flex flex-col h-screen`}>
+            <div className='container'>
+              <NavServer />
+            </div>
+            <main className='flex-grow container'>{children}</main>
+            <div className='container'>
+              <Footer />
+            </div>
           </body>
         </html>
       </ThemeProvider>

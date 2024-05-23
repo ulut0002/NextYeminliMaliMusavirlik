@@ -92,11 +92,22 @@ const ROUTE_PATHS = {
 
 const ROUTES = {
   //Root
-  home: { path: ROUTE_PATHS.home, breadcrumbs: [] }, // Home page
+  home: {
+    path: ROUTE_PATHS.home,
+
+    otherPaths: {
+      default: ROUTE_PATHS.home,
+    },
+    breadcrumbs: [],
+  }, // Home page
 
   // Level 1 - en
   corporate: {
     path: ROUTE_PATHS.corporate,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsal,
+      default: ROUTE_PATHS.corporate,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.corporate, label: LABELS.corporate },
@@ -104,17 +115,29 @@ const ROUTES = {
   },
   services: {
     path: ROUTE_PATHS.services,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetler,
+      default: ROUTE_PATHS.services,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.services, label: LABELS.services },
     ],
   },
   industries: {
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorler,
+      default: ROUTE_PATHS.industries,
+    },
     path: ROUTE_PATHS.industries,
     breadcrumbs: [LABELS.home, LABELS.industries],
   },
   publications: {
     path: ROUTE_PATHS.publications,
+    otherPaths: {
+      tr: ROUTE_PATHS.yayinlar,
+      default: ROUTE_PATHS.publications,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.publications, label: LABELS.publications },
@@ -122,6 +145,10 @@ const ROUTES = {
   },
   tools: {
     path: ROUTE_PATHS.tools,
+    otherPaths: {
+      tr: ROUTE_PATHS.araclar,
+      default: ROUTE_PATHS.tools,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.tools, label: LABELS.tools },
@@ -129,6 +156,10 @@ const ROUTES = {
   },
   contactUs: {
     path: ROUTE_PATHS.contactUs,
+    otherPaths: {
+      tr: ROUTE_PATHS.iletisim,
+      default: ROUTE_PATHS.contactUs,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.contactUs, label: LABELS.contactUs },
@@ -138,6 +169,10 @@ const ROUTES = {
   // Level 1 = tr
   kurumsal: {
     path: ROUTE_PATHS.kurumsal,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsal,
+      default: ROUTE_PATHS.corporate,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.kurumsal, label: LABELS.corporate },
@@ -145,6 +180,10 @@ const ROUTES = {
   },
   hizmetler: {
     path: ROUTE_PATHS.hizmetler,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetler,
+      default: ROUTE_PATHS.services,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.hizmetler, label: LABELS.services },
@@ -152,6 +191,10 @@ const ROUTES = {
   },
   sektorler: {
     path: ROUTE_PATHS.sektorler,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorler,
+      default: ROUTE_PATHS.industries,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.sektorler, label: LABELS.industries },
@@ -159,6 +202,10 @@ const ROUTES = {
   },
   yayinlar: {
     path: ROUTE_PATHS.yayinlar,
+    otherPaths: {
+      tr: ROUTE_PATHS.yayinlar,
+      default: ROUTE_PATHS.publications,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.yayinlar, label: LABELS.publications },
@@ -166,6 +213,10 @@ const ROUTES = {
   },
   araclar: {
     path: ROUTE_PATHS.araclar,
+    otherPaths: {
+      tr: ROUTE_PATHS.araclar,
+      default: ROUTE_PATHS.tools,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.araclar, label: LABELS.tools },
@@ -173,6 +224,10 @@ const ROUTES = {
   },
   iletisim: {
     path: ROUTE_PATHS.iletisim,
+    otherPaths: {
+      tr: ROUTE_PATHS.iletisim,
+      default: ROUTE_PATHS.contactUs,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.iletisim, label: LABELS.contactUs },
@@ -181,6 +236,10 @@ const ROUTES = {
   // Level 2 - en
   corporateAbout: {
     path: ROUTE_PATHS.corporateAbout,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalHakkinda,
+      default: ROUTE_PATHS.corporateAbout,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.corporate, label: LABELS.corporate },
@@ -189,6 +248,10 @@ const ROUTES = {
   },
   corporateTeam: {
     path: ROUTE_PATHS.corporateTeam,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalEkip,
+      default: ROUTE_PATHS.corporateTeam,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.corporate, label: LABELS.corporate },
@@ -197,6 +260,10 @@ const ROUTES = {
   },
   corporateMissionVision: {
     path: ROUTE_PATHS.corporateMissionVision,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalMisyonVizyon,
+      default: ROUTE_PATHS.corporateMissionVision,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.corporate, label: LABELS.corporate },
@@ -208,6 +275,10 @@ const ROUTES = {
   },
   corporateGetQuote: {
     path: ROUTE_PATHS.corporateGetQuote,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalTeklifAl,
+      default: ROUTE_PATHS.corporateGetQuote,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.corporate, label: LABELS.corporate },
@@ -216,6 +287,10 @@ const ROUTES = {
   },
   corporateOurDirectors: {
     path: ROUTE_PATHS.corporateOurDirectors,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalYonetimKurulu,
+      default: ROUTE_PATHS.corporateOurDirectors,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.corporate, label: LABELS.corporate },
@@ -227,6 +302,10 @@ const ROUTES = {
   },
   corporateFoundingDocuments: {
     path: ROUTE_PATHS.corporateFoundingDocuments,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalKurulusBelgeleri,
+      default: ROUTE_PATHS.corporateFoundingDocuments,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.corporate, label: LABELS.corporate },
@@ -238,18 +317,26 @@ const ROUTES = {
   },
   corporateTransparencyReports: {
     path: ROUTE_PATHS.corporateTransparencyReports,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalSaydamlıkRaporları,
+      default: ROUTE_PATHS.corporateTransparencyReports,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.corporate, label: LABELS.corporate },
       {
         path: ROUTE_PATHS.corporateTransparencyReports,
-        label: LABELS.transparencyReports,
+        label: LABELS.corporate_transparencyReports,
       },
     ],
   },
 
   servicesTaxes: {
     path: ROUTE_PATHS.servicesTaxes,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetlerVergi,
+      default: ROUTE_PATHS.servicesTaxes,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.services, label: LABELS.services },
@@ -258,6 +345,10 @@ const ROUTES = {
   },
   servicesAudit: {
     path: ROUTE_PATHS.servicesAudit,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetlerDenetim,
+      default: ROUTE_PATHS.servicesAudit,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.services, label: LABELS.services },
@@ -266,6 +357,10 @@ const ROUTES = {
   },
   servicesAdvisory: {
     path: ROUTE_PATHS.servicesAdvisory,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetlerDanismanlik,
+      default: ROUTE_PATHS.servicesAdvisory,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.services, label: LABELS.services },
@@ -274,6 +369,10 @@ const ROUTES = {
   },
   servicesOther: {
     path: ROUTE_PATHS.servicesOther,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetlerDiger,
+      default: ROUTE_PATHS.servicesOther,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.services, label: LABELS.services },
@@ -283,6 +382,10 @@ const ROUTES = {
 
   industriesProduction: {
     path: ROUTE_PATHS.industriesProduction,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerUretim,
+      default: ROUTE_PATHS.industriesProduction,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.industries, label: LABELS.industries },
@@ -294,6 +397,10 @@ const ROUTES = {
   },
   industriesEnergy: {
     path: ROUTE_PATHS.industriesEnergy,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerEnerji,
+      default: ROUTE_PATHS.industriesEnergy,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.industries, label: LABELS.industries },
@@ -302,6 +409,10 @@ const ROUTES = {
   },
   industriesFinancialServices: {
     path: ROUTE_PATHS.industriesFinancialServices,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerFinans,
+      default: ROUTE_PATHS.industriesFinancialServices,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.industries, label: LABELS.industries },
@@ -313,6 +424,10 @@ const ROUTES = {
   },
   industriesConstruction: {
     path: ROUTE_PATHS.industriesConstruction,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerInsaat,
+      default: ROUTE_PATHS.industriesConstruction,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.industries, label: LABELS.industries },
@@ -324,6 +439,10 @@ const ROUTES = {
   },
   industriesPharmaceutical: {
     path: ROUTE_PATHS.industriesPharmaceutical,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerSaglik,
+      default: ROUTE_PATHS.industriesPharmaceutical,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.industries, label: LABELS.industries },
@@ -335,6 +454,10 @@ const ROUTES = {
   },
   industriesTechnology: {
     path: ROUTE_PATHS.industriesTechnology,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerTeknoloji,
+      default: ROUTE_PATHS.industriesTechnology,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.industries, label: LABELS.industries },
@@ -346,6 +469,10 @@ const ROUTES = {
   },
   industriesRetail: {
     path: ROUTE_PATHS.industriesRetail,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerPerakende,
+      default: ROUTE_PATHS.industriesRetail,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.industries, label: LABELS.industries },
@@ -358,6 +485,10 @@ const ROUTES = {
 
   publicationNews: {
     path: ROUTE_PATHS.publicationNews,
+    otherPaths: {
+      tr: ROUTE_PATHS.yayinlarHaberler,
+      default: ROUTE_PATHS.publicationNews,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.publications, label: LABELS.publications },
@@ -369,6 +500,10 @@ const ROUTES = {
   },
   publicationCirculars: {
     path: ROUTE_PATHS.publicationCirculars,
+    otherPaths: {
+      tr: ROUTE_PATHS.yayinlarSirkuler,
+      default: ROUTE_PATHS.publicationCirculars,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.publications, label: LABELS.publications },
@@ -382,6 +517,10 @@ const ROUTES = {
   // Level 2 - tr
   kurumsalHakkinda: {
     path: ROUTE_PATHS.kurumsalHakkinda,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalHakkinda,
+      default: ROUTE_PATHS.corporateAbout,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.kurumsal, label: LABELS.corporate },
@@ -390,6 +529,10 @@ const ROUTES = {
   },
   kurumsalEkip: {
     path: ROUTE_PATHS.kurumsalEkip,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalEkip,
+      default: ROUTE_PATHS.corporateTeam,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.kurumsal, label: LABELS.corporate },
@@ -398,6 +541,10 @@ const ROUTES = {
   },
   kurumsalMisyonVizyon: {
     path: ROUTE_PATHS.kurumsalMisyonVizyon,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalMisyonVizyon,
+      default: ROUTE_PATHS.corporateMissionVision,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.kurumsal, label: LABELS.corporate },
@@ -409,6 +556,10 @@ const ROUTES = {
   },
   kurumsalTeklifAl: {
     path: ROUTE_PATHS.kurumsalTeklifAl,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalTeklifAl,
+      default: ROUTE_PATHS.corporateGetQuote,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.kurumsal, label: LABELS.corporate },
@@ -417,6 +568,10 @@ const ROUTES = {
   },
   kurumsalYonetimKurulu: {
     path: ROUTE_PATHS.kurumsalYonetimKurulu,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalYonetimKurulu,
+      default: ROUTE_PATHS.corporateOurDirectors,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.kurumsal, label: LABELS.corporate },
@@ -428,6 +583,10 @@ const ROUTES = {
   },
   kurumsalKurulusBelgeleri: {
     path: ROUTE_PATHS.kurumsalKurulusBelgeleri,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalKurulusBelgeleri,
+      default: ROUTE_PATHS.corporateFoundingDocuments,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.kurumsal, label: LABELS.corporate },
@@ -439,18 +598,26 @@ const ROUTES = {
   },
   kurumsalSaydamlıkRaporları: {
     path: ROUTE_PATHS.kurumsalSaydamlıkRaporları,
+    otherPaths: {
+      tr: ROUTE_PATHS.kurumsalSaydamlıkRaporları,
+      default: ROUTE_PATHS.corporateTransparencyReports,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.kurumsal, label: LABELS.corporate },
       {
         path: ROUTE_PATHS.kurumsalSaydamlıkRaporları,
-        label: LABELS.corporate_foundationDocuments,
+        label: LABELS.corporate_transparencyReports,
       },
     ],
   },
 
   hizmetlerVergi: {
     path: ROUTE_PATHS.hizmetlerVergi,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetlerVergi,
+      default: ROUTE_PATHS.servicesTaxes,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.hizmetler, label: LABELS.services },
@@ -462,6 +629,10 @@ const ROUTES = {
   },
   hizmetlerDenetim: {
     path: ROUTE_PATHS.hizmetlerDenetim,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetlerDenetim,
+      default: ROUTE_PATHS.servicesAudit,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.hizmetler, label: LABELS.services },
@@ -470,6 +641,10 @@ const ROUTES = {
   },
   hizmetlerDanismanlik: {
     path: ROUTE_PATHS.hizmetlerDanismanlik,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetlerDanismanlik,
+      default: ROUTE_PATHS.servicesAdvisory,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.hizmetler, label: LABELS.services },
@@ -481,6 +656,10 @@ const ROUTES = {
   },
   hizmetlerDiger: {
     path: ROUTE_PATHS.hizmetlerDiger,
+    otherPaths: {
+      tr: ROUTE_PATHS.hizmetlerDiger,
+      default: ROUTE_PATHS.servicesOther,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.hizmetler, label: LABELS.services },
@@ -490,6 +669,10 @@ const ROUTES = {
 
   sektorlerUretim: {
     path: ROUTE_PATHS.sektorlerUretim,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerUretim,
+      default: ROUTE_PATHS.industriesProduction,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.sektorler, label: LABELS.industries },
@@ -501,6 +684,10 @@ const ROUTES = {
   },
   sektorlerEnerji: {
     path: ROUTE_PATHS.sektorlerEnerji,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerEnerji,
+      default: ROUTE_PATHS.industriesEnergy,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.sektorler, label: LABELS.industries },
@@ -509,6 +696,11 @@ const ROUTES = {
   },
   sektorlerFinans: {
     path: ROUTE_PATHS.sektorlerFinans,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerFinans,
+      default: ROUTE_PATHS.industriesFinancialServices,
+    },
+
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.sektorler, label: LABELS.industries },
@@ -520,6 +712,10 @@ const ROUTES = {
   },
   sektorlerInsaat: {
     path: ROUTE_PATHS.sektorlerInsaat,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerInsaat,
+      default: ROUTE_PATHS.industriesConstruction,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.sektorler, label: LABELS.industries },
@@ -531,6 +727,10 @@ const ROUTES = {
   },
   sektorlerSaglik: {
     path: ROUTE_PATHS.sektorlerSaglik,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerSaglik,
+      default: ROUTE_PATHS.industriesPharmaceutical,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.sektorler, label: LABELS.industries },
@@ -542,6 +742,10 @@ const ROUTES = {
   },
   sektorlerTeknoloji: {
     path: ROUTE_PATHS.sektorlerTeknoloji,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerTeknoloji,
+      default: ROUTE_PATHS.industriesTechnology,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.sektorler, label: LABELS.industries },
@@ -553,6 +757,10 @@ const ROUTES = {
   },
   sektorlerPerakende: {
     path: ROUTE_PATHS.sektorlerPerakende,
+    otherPaths: {
+      tr: ROUTE_PATHS.sektorlerPerakende,
+      default: ROUTE_PATHS.industriesRetail,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.sektorler, label: LABELS.industries },
@@ -565,6 +773,10 @@ const ROUTES = {
 
   yayinlarHaberler: {
     path: ROUTE_PATHS.yayinlarHaberler,
+    otherPaths: {
+      tr: ROUTE_PATHS.yayinlarHaberler,
+      default: ROUTE_PATHS.publicationNews,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.yayinlar, label: LABELS.publications },
@@ -576,6 +788,10 @@ const ROUTES = {
   }, // Publications News page
   yayinlarSirkuler: {
     path: ROUTE_PATHS.yayinlarSirkuler,
+    otherPaths: {
+      tr: ROUTE_PATHS.yayinlarSirkuler,
+      default: ROUTE_PATHS.publicationCirculars,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.yayinlar, label: LABELS.publications },
@@ -588,6 +804,10 @@ const ROUTES = {
 
   araclar: {
     path: ROUTE_PATHS.araclar,
+    otherPaths: {
+      tr: ROUTE_PATHS.araclar,
+      default: ROUTE_PATHS.tools,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.araclar, label: LABELS.tools },
@@ -595,12 +815,90 @@ const ROUTES = {
   },
   iletisim: {
     path: ROUTE_PATHS.iletisim,
+    otherPaths: {
+      tr: ROUTE_PATHS.iletisim,
+      default: ROUTE_PATHS.contactUs,
+    },
     breadcrumbs: [
       { path: ROUTE_PATHS.home, label: LABELS.home },
       { path: ROUTE_PATHS.iletisim, label: LABELS.contactUs },
     ],
   },
 };
+
+const routeCrossReference = new Map();
+routeCrossReference
+  .set(ROUTE_PATHS.home, ROUTE_PATHS.home)
+  .set(ROUTE_PATHS.corporate, ROUTE_PATHS.kurumsal)
+  .set(ROUTE_PATHS.services, ROUTE_PATHS.hizmetler)
+  .set(ROUTE_PATHS.industries, ROUTE_PATHS.sektorler)
+  .set(ROUTE_PATHS.publications, ROUTE_PATHS.yayinlar)
+  .set(ROUTE_PATHS.tools, ROUTE_PATHS.araclar)
+  .set(ROUTE_PATHS.contactUs, ROUTE_PATHS.iletisim)
+  .set(ROUTE_PATHS.corporateAbout, ROUTE_PATHS.kurumsalHakkinda)
+  .set(ROUTE_PATHS.corporateTeam, ROUTE_PATHS.kurumsalEkip)
+  .set(ROUTE_PATHS.corporateMissionVision, ROUTE_PATHS.kurumsalMisyonVizyon)
+  .set(ROUTE_PATHS.corporateGetQuote, ROUTE_PATHS.kurumsalTeklifAl)
+  .set(ROUTE_PATHS.corporateOurDirectors, ROUTE_PATHS.kurumsalYonetimKurulu)
+  .set(
+    ROUTE_PATHS.corporateFoundingDocuments,
+    ROUTE_PATHS.kurumsalKurulusBelgeleri
+  )
+  .set(
+    ROUTE_PATHS.corporateTransparencyReports,
+    ROUTE_PATHS.kurumsalSaydamlıkRaporları
+  )
+  .set(ROUTE_PATHS.servicesTaxes, ROUTE_PATHS.hizmetlerVergi)
+  .set(ROUTE_PATHS.servicesAudit, ROUTE_PATHS.hizmetlerDenetim)
+  .set(ROUTE_PATHS.servicesAdvisory, ROUTE_PATHS.hizmetlerDanismanlik);
+routeCrossReference
+  .set(ROUTE_PATHS.servicesOther, ROUTE_PATHS.hizmetlerDiger)
+  .set(ROUTE_PATHS.industriesProduction, ROUTE_PATHS.sektorlerUretim);
+routeCrossReference
+  .set(ROUTE_PATHS.industriesEnergy, ROUTE_PATHS.sektorlerEnerji)
+  .set(ROUTE_PATHS.industriesFinancialServices, ROUTE_PATHS.sektorlerFinans)
+  .set(ROUTE_PATHS.industriesConstruction, ROUTE_PATHS.sektorlerInsaat);
+routeCrossReference
+  .set(ROUTE_PATHS.industriesPharmaceutical, ROUTE_PATHS.sektorlerSaglik)
+  .set(ROUTE_PATHS.industriesTechnology, ROUTE_PATHS.sektorlerTeknoloji)
+  .set(ROUTE_PATHS.industriesRetail, ROUTE_PATHS.sektorlerPerakende)
+  .set(ROUTE_PATHS.tools, ROUTE_PATHS.araclar)
+  .set(ROUTE_PATHS.contactUs, ROUTE_PATHS.iletisim)
+  .set(ROUTE_PATHS.corporate, ROUTE_PATHS.kurumsal)
+  .set(ROUTE_PATHS.services, ROUTE_PATHS.hizmetler)
+  .set(ROUTE_PATHS.industries, ROUTE_PATHS.sektorler)
+  .set(ROUTE_PATHS.publications, ROUTE_PATHS.yayinlar)
+  .set(ROUTE_PATHS.tools, ROUTE_PATHS.araclar)
+  .set(ROUTE_PATHS.contactUs, ROUTE_PATHS.iletisim)
+  .set(ROUTE_PATHS.kurumsalHakkinda, ROUTE_PATHS.corporateAbout)
+  .set(ROUTE_PATHS.kurumsalEkip, ROUTE_PATHS.corporateTeam)
+  .set(ROUTE_PATHS.kurumsalMisyonVizyon, ROUTE_PATHS.corporateMissionVision)
+  .set(ROUTE_PATHS.kurumsalTeklifAl, ROUTE_PATHS.corporateGetQuote)
+  .set(ROUTE_PATHS.kurumsalYonetimKurulu, ROUTE_PATHS.corporateOurDirectors)
+  .set(
+    ROUTE_PATHS.kurumsalKurulusBelgeleri,
+    ROUTE_PATHS.corporateFoundingDocuments
+  )
+  .set(
+    ROUTE_PATHS.kurumsalSaydamlıkRaporları,
+    ROUTE_PATHS.corporateTransparencyReports
+  )
+  .set(ROUTE_PATHS.hizmetlerVergi, ROUTE_PATHS.servicesTaxes)
+  .set(ROUTE_PATHS.hizmetlerDenetim, ROUTE_PATHS.servicesAudit)
+  .set(ROUTE_PATHS.hizmetlerDanismanlik, ROUTE_PATHS.servicesAdvisory);
+routeCrossReference
+  .set(ROUTE_PATHS.hizmetlerDiger, ROUTE_PATHS.servicesOther)
+  .set(ROUTE_PATHS.sektorlerUretim, ROUTE_PATHS.industriesProduction);
+routeCrossReference
+  .set(ROUTE_PATHS.sektorlerEnerji, ROUTE_PATHS.industriesEnergy)
+  .set(ROUTE_PATHS.sektorlerFinans, ROUTE_PATHS.industriesFinancialServices)
+  .set(ROUTE_PATHS.sektorlerInsaat, ROUTE_PATHS.industriesConstruction);
+routeCrossReference
+  .set(ROUTE_PATHS.sektorlerSaglik, ROUTE_PATHS.industriesPharmaceutical)
+  .set(ROUTE_PATHS.sektorlerTeknoloji, ROUTE_PATHS.industriesTechnology)
+  .set(ROUTE_PATHS.sektorlerPerakende, ROUTE_PATHS.industriesRetail)
+  .set(ROUTE_PATHS.araclar, ROUTE_PATHS.tools)
+  .set(ROUTE_PATHS.iletisim, ROUTE_PATHS.contactUs);
 
 const TOP_NAVIGATION = {
   tr: {
@@ -650,7 +948,7 @@ const TOP_NAVIGATION = {
         ],
       },
       {
-        text: "nav.services.title",
+        text: LABELS.services,
         path: ROUTE_PATHS.hizmetler,
         subItems: [
           {
@@ -710,6 +1008,11 @@ const TOP_NAVIGATION = {
             description: "nav.industries.technology.description",
             path: ROUTE_PATHS.sektorlerTeknoloji,
           },
+          {
+            text: LABELS.industries_retail,
+            description: "nav.industries.retail.description",
+            path: ROUTE_PATHS.sektorlerPerakende,
+          },
         ],
       },
       {
@@ -741,7 +1044,7 @@ const TOP_NAVIGATION = {
   fallback: {
     items: [
       {
-        text: "Corporate",
+        text: LABELS.corporate,
         path: ROUTE_PATHS.corporate,
         subItems: [
           {
@@ -808,7 +1111,7 @@ const TOP_NAVIGATION = {
         ],
       },
       {
-        text: "Industries",
+        text: LABELS.industries,
         path: ROUTE_PATHS.industries,
         columns: 2,
         subItems: [
@@ -842,10 +1145,15 @@ const TOP_NAVIGATION = {
             description: "nav.industries.technology.description",
             path: ROUTE_PATHS.industriesTechnology,
           },
+          {
+            text: LABELS.industries_retail,
+            description: "nav.industries.retail.description",
+            path: ROUTE_PATHS.industriesRetail,
+          },
         ],
       },
       {
-        text: "nav.publications.title",
+        text: LABELS.publications,
         path: ROUTE_PATHS.publications,
         subItems: [
           {
@@ -1006,4 +1314,47 @@ const getBreadcrumbPath = (t, path = []) => {
   return result;
 };
 
-export { ROUTES, BREADCRUMB_PATHS, getTopNavigation, getBreadcrumbPath };
+const findRouteEntry = (currPath, targetLang) => {
+  if (!currPath) return null;
+  if (!targetLang) return null;
+
+  let currRouteEntry = null;
+
+  for (const [key, value] of Object.entries(ROUTE_PATHS)) {
+    if (value === currPath) {
+      currRouteEntry = {
+        key: key,
+        value: value,
+      };
+      break;
+    }
+  }
+
+  if (!currRouteEntry) {
+    console.warn("error here");
+    return null;
+  }
+
+  const foundEntry = ROUTES[currRouteEntry.key];
+  if (foundEntry) {
+    const otherPaths = ROUTES[currRouteEntry.key]["otherPaths"];
+    if (otherPaths) {
+      return otherPaths[targetLang] || otherPaths["default"] || null;
+    } else {
+      console.warn("expected otherPaths: ", currRouteEntry);
+    }
+
+    return null;
+  } else {
+    console.warn("error here");
+  }
+  return null;
+};
+
+export {
+  ROUTES,
+  BREADCRUMB_PATHS,
+  getTopNavigation,
+  getBreadcrumbPath,
+  findRouteEntry,
+};

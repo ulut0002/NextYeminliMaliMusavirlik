@@ -18,19 +18,9 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  Bars4Icon,
-  GlobeAmericasIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  RectangleGroupIcon,
-  SquaresPlusIcon,
-  SunIcon,
-  TagIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { useLocale } from "next-intl";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 function NavListMenu({ menuItem, setOpenNav }) {
   const { subItems, columns = 1 } = menuItem;
@@ -170,21 +160,6 @@ function NavList({ menuItems = [], setOpenNav }) {
 
   return (
     <List className='mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1'>
-      {/*
-  
-   <Typography
-        as='a'
-        href='/'
-        variant='small'
-        color='blue-gray'
-        className='font-medium'
-      >
-        <ListItem ripple={false} className='flex items-center gap-2 py-2 pr-4'>
-          Home ({locale})
-        </ListItem>
-      </Typography>
-  */}
-
       {menuItems.map((menuItem) => {
         return (
           <NavListMenu
@@ -194,22 +169,9 @@ function NavList({ menuItems = [], setOpenNav }) {
           />
         );
       })}
-      {/*
-     <Typography
-        as='a'
-        href='#'
-        variant='small'
-        color='blue-gray'
-        className='font-medium'
-      >
-        <ListItem className='flex items-center gap-2 py-2 pr-4'>
-          Contact Us
-        </ListItem>
-      </Typography>
-    
-    
-    
-    */}
+      <div>
+        <LanguageSwitcher />
+      </div>
     </List>
   );
 }
@@ -225,7 +187,7 @@ export default function MegaMenuDefault({ menuItems = [] }) {
   }, []);
 
   return (
-    <Navbar className='mx-auto max-w-screen-2xl max-w-sc px-4 py-2 rounded-md'>
+    <Navbar className=' max-w-sc px-4 py-2 rounded-md'>
       <div className='flex items-center justify-between text-blue-gray-900'>
         <Link href='/'>
           <Typography

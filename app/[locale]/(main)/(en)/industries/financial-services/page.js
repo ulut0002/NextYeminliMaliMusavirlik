@@ -1,6 +1,22 @@
 import { NEXT_INDUSTRIES } from "@/appConfig";
 import IndustryDetailPage from "@/pages/industries/IndustryDetailPage";
+import { useLocale, useTranslations } from "next-intl";
+import { getBreadcrumbData } from "@/lib/uiUtils";
+import { ROUTES } from "@/siteConfig";
 
-export default function page() {
-  return <IndustryDetailPage industry={NEXT_INDUSTRIES.financial} />;
+export default function SektorlerFinans() {
+  const t = useTranslations();
+  const locale = useLocale();
+
+  const breadcrumbs = getBreadcrumbData(
+    ROUTES.industriesFinancialServices.breadcrumbs,
+    locale,
+    t
+  );
+  return (
+    <IndustryDetailPage
+      industry={NEXT_INDUSTRIES.financial}
+      breadcrumbs={breadcrumbs}
+    />
+  );
 }

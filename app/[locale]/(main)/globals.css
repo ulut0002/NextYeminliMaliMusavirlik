@@ -30,4 +30,29 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .list-pipe > li::before {
+    content: "|";
+    /* padding: 0.5rem; */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .list-pipe > li:first-child::before {
+    content: none;
+  }
+
+  .list-item > li::before {
+    content: "";
+    padding: 0;
+  }
+
+  .list-item > li {
+    list-style-type: none;
+    margin-left: 0rem;
+  }
+
+  .container {
+    @apply mx-auto max-w-screen-2xl;
+  }
 }

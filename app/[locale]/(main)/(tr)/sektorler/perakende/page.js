@@ -9,7 +9,7 @@ export default function SektorlerPerakende() {
   const locale = useLocale();
 
   const breadcrumbs = getBreadcrumbData(
-    ROUTES.SektorlerPerakende.breadcrumbs,
+    ROUTES.sektorlerPerakende.breadcrumbs,
     locale,
     t
   );

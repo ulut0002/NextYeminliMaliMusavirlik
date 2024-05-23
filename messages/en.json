@@ -3,8 +3,8 @@
   "meta": {
     "home": {
       "title": "Next Certified Public Accountants",
-      "description": "Next Certified Public Accountants is a firm of Chartered Accountants, established in 2010, with offices in Nairobi and Mombasa. We offer a wide range of services to our clients, including audit and assurance, tax, advisory, and consulting services.",
-      "keywords": "Next Certified Public Accountants, Next CPA, Next, CPA, Certified Public Accountants, Chartered Accountants, Nairobi, Mombasa, Kenya, East Africa, audit, assurance, tax, advisory, consulting"
+      "description": "Next Certified Public Accountants is one of the leading accounting firms in Turkey. Next Certified Public Accountants offers tax advisory, audit, consulting, and other services to its clients.",
+      "keywords": "Next Certified Public Accountants, CPA, tax advisory, audit, consulting, industries, publications, tools, contact"
     }
   },
   "nav": {
@@ -13,22 +13,95 @@
     },
     "corporate": {
       "title": "Corporate",
-      "about": { "title": "About Us", "subText": "" },
-      "ourTeam": { "title": "Our Team", "subText": "" },
-      "missionVision": { "title": "Mission - Vision", "subText": "" },
-      "getQuote": { "title": "Request a Quote", "subText": "" },
-      "ourDirectors": { "title": "Our Directors", "subText": "" },
-      "foundationDocuments": { "title": "Foundation Documents", "subText": "" },
-      "transparencyReports": { "title": "Transparency Reports", "subText": "" }
+      "about": {
+        "title": "About Us",
+        "description": "Learn about the history, culture, and values of our firm."
+      },
+      "ourTeam": {
+        "title": "Our Team",
+        "description": "Meet our professional team and learn about their expertise."
+      },
+      "missionVision": {
+        "title": "Mission - Vision",
+        "description": "Discover our mission and vision and see our future plans."
+      },
+      "getQuote": {
+        "title": "Request a Quote",
+        "description": "Get detailed pricing information and request a quote for our services."
+      },
+      "ourDirectors": {
+        "title": "Our Directors",
+        "description": "Learn about our management team and their experience in the industry."
+      },
+      "foundationDocuments": {
+        "title": "Foundation Documents",
+        "description": "Browse through our official foundation documents and certifications."
+      },
+      "transparencyReports": {
+        "title": "Transparency Reports",
+        "description": "Review our transparency and accountability reports."
+      }
     },
     "services": {
-      "title": "Our Services"
+      "title": "Our Services",
+      "taxes": {
+        "title": "Tax Advisory",
+        "description": "Get detailed information about our tax advisory services."
+      },
+      "audit": {
+        "title": "Audit",
+        "description": "Get detailed information about our audit services."
+      },
+      "advisory": {
+        "title": "Consulting",
+        "description": "Get detailed information about our consulting services."
+      },
+      "other": {
+        "title": "Other Services",
+        "description": "Get detailed information about our other services."
+      }
     },
     "industries": {
-      "title": "Industries"
+      "title": "Industries",
+      "industry": {
+        "title": "Production",
+        "description": "Get detailed information about the production industries."
+      },
+      "energy": {
+        "title": "Energy",
+        "description": "Get detailed information about the energy industry."
+      },
+      "financial": {
+        "title": "Financial",
+        "description": "Get detailed information about the financial industry."
+      },
+      "construction": {
+        "title": "Construction",
+        "description": "Get detailed information about the construction industry."
+      },
+      "pharmaceutical": {
+        "title": "Pharmaceutical",
+        "description": "Get detailed information about the pharmaceutical industry."
+      },
+      "technology": {
+        "title": "Technology",
+        "description": "Get detailed information about the technology industry."
+      },
+      "retail": {
+        "title": "Retail",
+        "description": "Get detailed information about the retail industry."
+      }
     },
     "publications": {
-      "title": "Publications"
+      "title": "Publications",
+      "news": {
+        "title": "News",
+        "description": "Check out our latest news and announcements."
+      },
+      "circulars": {
+        "title": "Circulars",
+        "description": "Review the circulars published by our firm."
+      }
     },
     "tools": {
       "title": "Tools"

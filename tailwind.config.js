@@ -7,7 +7,11 @@ const config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    listStyleType: {
+      pipe: "",
+    },
+  },
   plugins: [],
 };
 

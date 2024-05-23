@@ -22,7 +22,7 @@
         "description": "Profesyonel ekibimizi tanıyın ve uzmanlıkları hakkında daha fazla öğrenin."
       },
       "missionVision": {
-        "title": "Misyon - Vizyon",
+        "title": "Misyon ve Vizyon",
         "description": "Misyonumuzu ve vizyonumuzu keşfedin ve gelecek planlarımızı görün."
       },
       "getQuote": {
@@ -86,6 +86,10 @@
       "technology": {
         "title": "Teknoloji",
         "description": "Teknoloji sektörü hakkında detaylı bilgi alın."
+      },
+      "retail": {
+        "title": "Perakende",
+        "description": "Perakende sektörü hakkında detaylı bilgi alın."
       }
     },
     "publications": {

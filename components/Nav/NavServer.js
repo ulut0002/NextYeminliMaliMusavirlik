@@ -22,12 +22,7 @@ export default async function NavServer() {
   });
 
   localeMenu = produce(items, (draft) => {
-    // draft.forEach((item) => {
-    // }
-    // draft.text = t(draft.text || "");
-    // draft.path = `${locale}${draft.path}`;
     draft.forEach((item) => {
-      // console.log(item);
       item.key = item.text;
       item.text = t(item.text || "");
       item.path = `/${locale}${item.path}`;
@@ -46,8 +41,6 @@ export default async function NavServer() {
       item.subItems = newSubItems;
     });
   });
-
-  // console.log(localeMenu);
 
   return <MegaMenuDefault menuItems={localeMenu} />;
 }

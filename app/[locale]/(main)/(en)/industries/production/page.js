@@ -1,5 +1,5 @@
 import { NEXT_INDUSTRIES } from "@/appConfig";
-import IndustryDetailPage from "@/pages/industries/IndustryDetailPage";
+import IndustryDetailPage from "@/sitePages/industries/IndustryDetailPage";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 import { getBreadcrumbData } from "@/lib/uiUtils";

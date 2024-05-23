@@ -4,7 +4,6 @@ import { DEFAULT_LOCALE, LOCALE_OBJECTS } from "@/i18n";
 import { switchLanguage } from "@/lib/utils";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect } from "react";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
@@ -12,10 +11,6 @@ export default function LanguageSwitcher() {
 
   const pathname = usePathname();
   const locale = useLocale();
-
-  useEffect(() => {
-    console.log("pathname", pathname, locale);
-  }, []);
 
   const handleLanguageChange = (newLang) => {
     // const newPath = switchLanguage(currentLang, newLang, asPath);

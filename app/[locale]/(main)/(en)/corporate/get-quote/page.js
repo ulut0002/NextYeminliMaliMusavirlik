@@ -1,5 +1,5 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
-import CorporateGetQuote from "@/pages/corporate/CorporateGetQuote";
+import CorporateGetQuote from "@/sitePages/corporate/CorporateGetQuote";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 

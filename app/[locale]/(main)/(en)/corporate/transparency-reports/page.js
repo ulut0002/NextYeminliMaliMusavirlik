@@ -1,5 +1,5 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
-import CorporateTransparencyReports from "@/pages/corporate/CorporateTransparencyReports";
+import CorporateTransparencyReports from "@/sitePages/corporate/CorporateTransparencyReports";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 

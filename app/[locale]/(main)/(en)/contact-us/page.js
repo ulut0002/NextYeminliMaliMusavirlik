@@ -1,5 +1,5 @@
-import ContactUsMain from "@/pages/contact-us/ContactUsMain";
+import ContactUsMain from "@/sitePages/contact-us/ContactUsMain";
 
-export default function page() {
+export default function ContactUs() {
   return <ContactUsMain />;
 }

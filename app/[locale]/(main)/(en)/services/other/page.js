@@ -1,6 +1,6 @@
 import { NEXT_SERVICES } from "@/appConfig";
-import ServiceDetailPage from "@/pages/services/ServiceDetailPage";
+import ServiceDetailPage from "@/sitePages/services/ServiceDetailPage";
 
-export default function page() {
+export default function ServiceOther() {
   return <ServiceDetailPage service={NEXT_SERVICES.other} />;
 }

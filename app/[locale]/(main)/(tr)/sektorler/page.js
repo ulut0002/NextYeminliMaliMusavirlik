@@ -1,5 +1,5 @@
-import IndustriesMain from "@/pages/industries/IndustriesMain";
+import IndustriesMain from "@/sitePages/industries/IndustriesMain";
 
-export default function page() {
+export default function Industries() {
   return <IndustriesMain />;
 }

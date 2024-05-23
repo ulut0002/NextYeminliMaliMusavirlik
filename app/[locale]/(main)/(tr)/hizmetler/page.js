@@ -1,5 +1,5 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
-import OurServicesMain from "@/pages/services/OurServicesMain";
+import OurServicesMain from "@/sitePages/services/OurServicesMain";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 

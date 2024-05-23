@@ -1,4 +1,4 @@
-import NewsPage from "@/pages/publications/NewsPage";
+import NewsPage from "@/sitePages/publications/NewsPage";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 import { getBreadcrumbData } from "@/lib/uiUtils";

@@ -1,4 +1,4 @@
-import ToolsMain from "@/pages/tools/ToolsMain";
+import ToolsMain from "@/sitePages/tools/ToolsMain";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 import { getBreadcrumbData } from "@/lib/uiUtils";

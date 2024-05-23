@@ -1,6 +1,6 @@
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import { getBreadcrumbData } from "@/lib/uiUtils";
-import CorporateMain from "@/pages/corporate/CorporateMain";
+import CorporateMain from "@/sitePages/corporate/CorporateMain";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 

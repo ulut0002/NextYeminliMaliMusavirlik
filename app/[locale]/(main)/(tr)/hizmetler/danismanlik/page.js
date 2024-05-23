@@ -1,6 +1,6 @@
 import { NEXT_SERVICES } from "@/appConfig";
 import { getBreadcrumbData } from "@/lib/uiUtils";
-import ServiceDetailPage from "@/pages/services/ServiceDetailPage";
+import ServiceDetailPage from "@/sitePages/services/ServiceDetailPage";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 

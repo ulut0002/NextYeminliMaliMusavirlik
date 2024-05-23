@@ -1,5 +1,5 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
-import CirculerPage from "@/pages/publications/CirculerPage";
+import CirculerPage from "@/sitePages/publications/CirculerPage";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 

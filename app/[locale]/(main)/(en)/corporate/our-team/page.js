@@ -1,5 +1,5 @@
-import CorporateOurTeam from "@/pages/corporate/CorporateOurTeam";
+import CorporateOurTeam from "@/sitePages/corporate/CorporateOurTeam";
 
-export default function page() {
+export default function Corp() {
   return <CorporateOurTeam />;
 }

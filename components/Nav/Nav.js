@@ -169,9 +169,8 @@ function NavList({ menuItems = [], setOpenNav }) {
           />
         );
       })}
-      <div>
-        <LanguageSwitcher />
-      </div>
+
+      <LanguageSwitcher style={`text-sm font-medium`} />
     </List>
   );
 }

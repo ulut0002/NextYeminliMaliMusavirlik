@@ -1353,6 +1353,7 @@ const findRouteEntry = (currPath, targetLang) => {
 
 export {
   ROUTES,
+  ROUTE_PATHS,
   BREADCRUMB_PATHS,
   getTopNavigation,
   getBreadcrumbPath,

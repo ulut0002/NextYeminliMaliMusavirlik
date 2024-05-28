@@ -3,8 +3,8 @@
   "meta": {
     "home": {
       "title": "Next 注册会计师",
-      "description": "Next 注册会计师是土耳其领先的会计师事务所之一。Next 注册会计师为客户提供税务咨询、审计、咨询及其他服务。",
-      "keywords": "Next 注册会计师, CPA, 税务咨询, 审计, 咨询, 行业, 出版物, 工具, 联系"
+      "description": "Next 注册会计师是土耳其领先的会计师事务所之一。Next 注册会计师为客户提供税务咨询、审计、咨询和其他服务。",
+      "keywords": "Next 注册会计师, 注册会计师, 税务咨询, 审计, 咨询, 行业, 出版物, 工具, 联系"
     }
   },
   "nav": {
@@ -19,23 +19,23 @@
       },
       "ourTeam": {
         "title": "我们的团队",
-        "description": "认识我们的专业团队，并了解他们的专业知识。"
+        "description": "认识我们的专业团队并了解他们的专业知识。"
       },
       "missionVision": {
         "title": "使命与愿景",
-        "description": "发现我们的使命和愿景，并了解我们的未来计划。"
+        "description": "了解我们的使命和愿景，看看我们的未来计划。"
       },
       "getQuote": {
         "title": "请求报价",
-        "description": "获取详细的定价信息并请求我们的服务报价。"
+        "description": "获取详细的价格信息并请求我们的服务报价。"
       },
       "ourDirectors": {
         "title": "我们的董事",
-        "description": "了解我们的管理团队及其行业经验。"
+        "description": "了解我们的管理团队及其在行业中的经验。"
       },
       "foundationDocuments": {
         "title": "基础文件",
-        "description": "浏览我们的官方基础文件和证书。"
+        "description": "浏览我们的官方基础文件和认证。"
       },
       "transparencyReports": {
         "title": "透明度报告",
@@ -46,50 +46,50 @@
       "title": "我们的服务",
       "taxes": {
         "title": "税务咨询",
-        "description": "获取关于我们税务咨询服务的详细信息。"
+        "description": "获取有关我们税务咨询服务的详细信息。"
       },
       "audit": {
         "title": "审计",
-        "description": "获取关于我们审计服务的详细信息。"
+        "description": "获取有关我们审计服务的详细信息。"
       },
       "advisory": {
         "title": "咨询",
-        "description": "获取关于我们咨询服务的详细信息。"
+        "description": "获取有关我们咨询服务的详细信息。"
       },
       "other": {
         "title": "其他服务",
-        "description": "获取关于我们其他服务的详细信息。"
+        "description": "获取有关我们其他服务的详细信息。"
       }
     },
     "industries": {
       "title": "行业",
       "industry": {
         "title": "生产",
-        "description": "获取关于生产行业的详细信息。"
+        "description": "获取有关生产行业的详细信息。"
       },
       "energy": {
         "title": "能源",
-        "description": "获取关于能源行业的详细信息。"
+        "description": "获取有关能源行业的详细信息。"
       },
       "financial": {
         "title": "金融",
-        "description": "获取关于金融行业的详细信息。"
+        "description": "获取有关金融行业的详细信息。"
       },
       "construction": {
         "title": "建筑",
-        "description": "获取关于建筑行业的详细信息。"
+        "description": "获取有关建筑行业的详细信息。"
       },
       "pharmaceutical": {
         "title": "制药",
-        "description": "获取关于制药行业的详细信息。"
+        "description": "获取有关制药行业的详细信息。"
       },
       "technology": {
         "title": "技术",
-        "description": "获取关于技术行业的详细信息。"
+        "description": "获取有关技术行业的详细信息。"
       },
       "retail": {
         "title": "零售",
-        "description": "获取关于零售行业的详细信息。"
+        "description": "获取有关零售行业的详细信息。"
       }
     },
     "publications": {
@@ -112,5 +112,27 @@
   },
   "index": {
     "title": "Next 注册会计师"
+  },
+  "main": {
+    "ourServices": {
+      "title": "我们的服务",
+      "description": "Next 注册会计师为客户提供税务咨询、审计、咨询和其他服务。",
+      "tax": {
+        "title": "税务咨询",
+        "description": "获取有关我们税务咨询服务的详细信息。"
+      },
+      "audit": {
+        "title": "审计",
+        "description": "获取有关我们审计服务的详细信息。"
+      },
+      "advisory": {
+        "title": "咨询",
+        "description": "获取有关我们咨询服务的详细信息。"
+      },
+      "other": {
+        "title": "其他服务",
+        "description": "获取有关我们其他服务的详细信息。"
+      }
+    }
   }
 }

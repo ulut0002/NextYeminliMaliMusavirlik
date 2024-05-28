@@ -114,5 +114,28 @@
   },
   "index": {
     "title": "Next Yeminli Mali Müşavirlik"
+  },
+
+  "main": {
+    "ourServices": {
+      "title": "Hizmetlerimiz",
+      "description": "Next Yeminli Mali Müşavirlik, müşterilerine vergi danışmanlığı, denetim, danışmanlık ve diğer hizmetler sunmaktadır.",
+      "tax": {
+        "title": "Vergi Danışmanlığı",
+        "description": "Vergi danışmanlığı hizmetlerimiz hakkında detaylı bilgi alın."
+      },
+      "audit": {
+        "title": "Denetim",
+        "description": "Denetim hizmetlerimiz hakkında detaylı bilgi alın."
+      },
+      "advisory": {
+        "title": "Danışmanlık",
+        "description": "Danışmanlık hizmetlerimiz hakkında detaylı bilgi alın."
+      },
+      "other": {
+        "title": "Diğer Hizmetler",
+        "description": "Diğer hizmetlerimiz hakkında detaylı bilgi alın."
+      }
+    }
   }
 }

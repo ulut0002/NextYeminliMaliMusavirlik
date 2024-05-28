@@ -8,9 +8,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Requires CSS 
 export default function MainPageCarousel() {
   return (
     <Carousel showArrows={true} showStatus={false}>
-      <div>
-        <Image src={hero1} alt='hero1' width={500} height={100} />
-        <p className='legend'>abc</p>
+      <div className='hero-background'>
+        <div>
+          <h2 className=' text-4xl text-white '>
+            NEXT Yeminli Mali Müşavirlik
+          </h2>
+        </div>
       </div>
       <div>
         <Image src={hero2} alt='hero2' width={500} height={100} />
@@ -19,3 +22,6 @@ export default function MainPageCarousel() {
     </Carousel>
   );
 }
+
+// <Image src={hero1} alt='hero1' width={500} height={100} />
+// <p className='legend'>abc</p>;

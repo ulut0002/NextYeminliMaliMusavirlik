@@ -6,7 +6,6 @@ export default function NewsPage({ breadcrumbs }) {
   const locale = useLocale();
   return (
     <div>
-      {breadcrumbs}
       <NewsServer locale={locale} breadcrumbs={breadcrumbs} />
     </div>
   );

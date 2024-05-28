@@ -112,5 +112,28 @@
   },
   "index": {
     "title": "Next Certified Public Accountants"
+  },
+
+  "main": {
+    "ourServices": {
+      "title": "Our Services",
+      "description": "Next Certified Public Accountancy provides tax consultancy, auditing, advisory, and other services to its clients.",
+      "tax": {
+        "title": "Tax Consultancy",
+        "description": "Get detailed information about our tax consultancy services."
+      },
+      "audit": {
+        "title": "Audit",
+        "description": "Get detailed information about our audit services."
+      },
+      "advisory": {
+        "title": "Advisory",
+        "description": "Get detailed information about our advisory services."
+      },
+      "other": {
+        "title": "Other Services",
+        "description": "Get detailed information about our other services."
+      }
+    }
   }
 }

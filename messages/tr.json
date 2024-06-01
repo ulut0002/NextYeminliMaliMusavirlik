@@ -1,5 +1,9 @@
 {
-  "generic": {},
+  "generic": {
+    "learnMore": "Detaylar",
+    "viewAllIndustries": "Tüm sektörleri görüntüle",
+    "viewOneIndustry": "İncele"
+  },
   "meta": {
     "home": {
       "title": "Next Yeminli Mali Müşavirlik",
@@ -117,6 +121,29 @@
   },
 
   "main": {
+    "carousel": {
+      "ctaLabel": "Detaylar",
+      "image1": {
+        "title": "Tasdik ve Denetim Hizmetleri",
+        "description": "Yasal kayıt ve işlemlerin incelenerek vergi ile ilgili yasal yükümlülüklerinin yerine getirilmesine yönelik uygunluk denetimi"
+      },
+      "image2": {
+        "title": "Bilgi Hizmetleri",
+        "description": "Vergi yargısı ve davalarına yönelik hizmetleri ve Tecil ve taksitlendirme işlemleri"
+      },
+      "image3": {
+        "title": "Bağımsız Denetim Hizmetleri",
+        "description": "Major Bağımsız Denetim ve Yeminli Mali Müşavirlik olarak bizler Uluslararası Finansal Raporlama (IFRS) Hizmetleri."
+      },
+      "image4": {
+        "title": "Yatırım ve İhracat Teşvik Danışmanlığı",
+        "description": "Yapılacak yatırımlar konusunda arsa ve arazi tahsisi, KDV İstisnası, Kurumlar Vergisi indirimi, Gelir Vergisi stopaj desteği"
+      },
+      "image5": {
+        "title": "Danışmanlık Hizmetleri",
+        "description": "Şirket devir birleşme ve bölünmeleri, Transfer fiyatlandırması sisteminin yönetilmesi ve işletilmesinde şirketlerin hak ve yükümlülüklerinin belirlenmesi"
+      }
+    },
     "ourServices": {
       "title": "Hizmetlerimiz",
       "description": "Next Yeminli Mali Müşavirlik, müşterilerine vergi danışmanlığı, denetim, danışmanlık ve diğer hizmetler sunmaktadır.",
@@ -126,7 +153,7 @@
       },
       "audit": {
         "title": "Denetim",
-        "description": "Denetim hizmetlerimiz hakkında detaylı bilgi alın."
+        "description": "KGK, SPK, EPDK, Kalkınma Ajansları, AB projeleri, UFRS, Due Diligence, TFF denetimleri."
       },
       "advisory": {
         "title": "Danışmanlık",
@@ -135,6 +162,31 @@
       "other": {
         "title": "Diğer Hizmetler",
         "description": "Diğer hizmetlerimiz hakkında detaylı bilgi alın."
+      }
+    },
+    "ourIndustries": {
+      "mainTitle": "Hizmet sunduğumuz sektörler",
+      "title": "NEXT YMMM, geniş kapsamlı sektörel hizmetler sunar ve önde gelen uygulamalar hakkında derinlemesine bilgiler sağlar.",
+      "production": {
+        "description": "Şirketimiz, üretim endüstrisinin benzersiz ihtiyaçlarına uygun kapsamlı muhasebe ve finansal hizmetler sunar, etkin maliyet yönetimi ve finansal planlama sağlar."
+      },
+      "energy": {
+        "description": "Enerji sektörü için özel muhasebe çözümleri sunuyoruz, işletmelerin enerji finansmanı, uyumluluk ve yatırım planlaması karmaşıklıklarını aşmasına yardımcı oluyoruz."
+      },
+      "financial": {
+        "description": "Finans sektöründeki uzmanlığımız, finansal kurumların düzenleyici uyumluluk ve stratejik büyüme sağlamalarına destek olan sağlam muhasebe, denetim ve danışmanlık hizmetlerini içerir."
+      },
+      "construction": {
+        "description": "İnşaat sektörü için hedeflenmiş muhasebe hizmetleri sunuyoruz, proje maliyet kontrolü, finansal raporlama ve vergi planlamasına odaklanarak iş operasyonlarınızı optimize ediyoruz."
+      },
+      "pharmaceutical": {
+        "description": "Firmamız, ilaç şirketlerine kesin muhasebe, finansal yönetim ve uyumluluk hizmetleri sunar, yüksek düzenlemelere tabi bir sektörde sorunsuz operasyon ve düzenleyici uyumluluk sağlar."
+      },
+      "technology": {
+        "description": "Teknoloji şirketleri için özel muhasebe ve danışmanlık hizmetleri sunuyoruz, finansal planlama, yatırım stratejileri ve düzenleyici uyumluluğa yardımcı olarak inovasyon ve büyümeyi teşvik ediyoruz."
+      },
+      "retail": {
+        "description": "Perakende sektörü için muhasebe hizmetlerimiz, envanter yönetimi, finansal raporlama ve vergi optimizasyonunu içerir, perakendecilerin karlılığı ve operasyonel verimliliği artırmasına yardımcı olur."
       }
     }
   }

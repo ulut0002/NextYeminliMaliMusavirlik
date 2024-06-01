@@ -1,5 +1,8 @@
 {
-  "generic": {},
+  "generic": {
+    "learnMore": "Learn More",
+    "viewOneIndustry": "Explore services"
+  },
   "meta": {
     "home": {
       "title": "Next Certified Public Accountants",
@@ -115,6 +118,30 @@
   },
 
   "main": {
+    "carousel": {
+      "ctaLabel": "Learn More",
+      "image1": {
+        "title": "Attestation and Audit Services",
+        "description": "Compliance audits to ensure legal records and transactions fulfill tax-related legal obligations"
+      },
+      "image2": {
+        "title": "Information Services",
+        "description": "Services related to tax jurisdiction and litigation, as well as deferral and installment arrangements"
+      },
+      "image3": {
+        "title": "Independent Audit Services",
+        "description": "Get a risk-based financial statement audit with our high-quality, technology-powered approach."
+      },
+      "image4": {
+        "title": "Investment and Export Incentive Consultancy",
+        "description": "Navigate uncertainty and complexity in strategic planning and capital events with our specialized advisory services."
+      },
+      "image5": {
+        "title": "Consulting Services",
+        "description": "Determining the rights and obligations of companies in mergers, acquisitions, and divisions, and managing transfer pricing systems"
+      }
+    },
+
     "ourServices": {
       "title": "Our Services",
       "description": "Next Certified Public Accountancy provides tax consultancy, auditing, advisory, and other services to its clients.",
@@ -133,6 +160,32 @@
       "other": {
         "title": "Other Services",
         "description": "Get detailed information about our other services."
+      }
+    },
+
+    "ourIndustries": {
+      "mainTitle": "Industries we serve",
+      "title": "Next  provides a breadth of relevant industry offerings and deep insights into leading practices.",
+      "production": {
+        "description": "Our company offers comprehensive accounting and financial services tailored to the unique needs of the production industry, ensuring efficient cost management and financial planning."
+      },
+      "energy": {
+        "description": "We provide specialized accounting solutions for the energy sector, helping businesses navigate the complexities of energy finance, compliance, and investment planning."
+      },
+      "financial": {
+        "description": "Our expertise in the financial industry includes robust accounting, auditing, and advisory services, designed to support financial institutions in achieving regulatory compliance and strategic growth."
+      },
+      "construction": {
+        "description": "We deliver targeted accounting services for the construction industry, focusing on project cost control, financial reporting, and tax planning to optimize your business operations."
+      },
+      "pharmaceutical": {
+        "description": "Our firm supports pharmaceutical companies with precise accounting, financial management, and compliance services, ensuring smooth operations and regulatory adherence in a highly regulated industry."
+      },
+      "technology": {
+        "description": "We offer specialized accounting and advisory services for technology companies, aiding in financial planning, investment strategies, and regulatory compliance to drive innovation and growth."
+      },
+      "retail": {
+        "description": "Our accounting services for the retail industry include inventory management, financial reporting, and tax optimization, helping retailers enhance profitability and operational efficiency."
       }
     }
   }

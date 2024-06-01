@@ -27,7 +27,7 @@ export default function LanguageSwitcher({ style }) {
     <div className='flex items-center justify-center'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        class='icon icon-tabler icon-tabler-world h-8 w-8 '
+        className='icon icon-tabler icon-tabler-world h-8 w-8 '
         width='44'
         height='44'
         viewBox='0 0 24 24'

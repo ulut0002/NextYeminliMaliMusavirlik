@@ -1,6 +1,7 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import { ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
+import React from "react";
 
 export default function ContactUsMain() {
   const t = useTranslations();
@@ -8,9 +9,11 @@ export default function ContactUsMain() {
 
   const breadcrumbs = getBreadcrumbData(ROUTES.iletisim.breadcrumbs, locale, t);
   return (
-    <div>
-      {breadcrumbs}
-      ContactUsMain {locale}
-    </div>
+    <React.Fragment>
+      <div>
+        {breadcrumbs}
+        ContactUsMain {locale}
+      </div>
+    </React.Fragment>
   );
 }

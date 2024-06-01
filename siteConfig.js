@@ -1355,6 +1355,7 @@ export {
   ROUTES,
   ROUTE_PATHS,
   BREADCRUMB_PATHS,
+  LABELS,
   getTopNavigation,
   getBreadcrumbPath,
   findRouteEntry,

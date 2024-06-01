@@ -58,7 +58,9 @@ export default async function Footer() {
                     {item.subItems &&
                       item.subItems.map((subItem) => (
                         <li key={subItem.text} className='m-0 '>
-                          <Link href={subItem.path}>{subItem.text}</Link>
+                          <Link className='link' href={subItem.path}>
+                            {subItem.text}
+                          </Link>
                         </li>
                       ))}
                   </ul>

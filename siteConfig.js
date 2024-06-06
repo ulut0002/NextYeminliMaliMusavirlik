@@ -1187,123 +1187,529 @@ const getTopNavigation = (locale) => {
   return TOP_NAVIGATION[locale] || TOP_NAVIGATION.fallback;
 };
 
-const BREADCRUMB_PATHS = {
+const breadcrumbPaths = {
   home: { href: ROUTES.home.path, text: LABELS.home },
-  corporate: { href: ROUTES.corporate.path, text: LABELS.corporate },
-  kurumsal: { href: ROUTES.kurumsal.path, text: LABELS.corporate },
-  services: { href: ROUTES.services.path, text: LABELS.services },
-  industries: {
-    href: ROUTES.industries.path,
-    text: LABELS.industries,
-  },
-  publications: {
+  kurumsalHome: { href: ROUTES.kurumsal.path, text: LABELS.corporate },
+  corporateHome: { href: ROUTES.corporate.path, text: LABELS.corporate },
+  hizmetlerHome: { href: ROUTES.hizmetler.path, text: LABELS.services },
+  servicesHome: { href: ROUTES.services.path, text: LABELS.services },
+  sektorlerHome: { href: ROUTES.sektorler.path, text: LABELS.industries },
+  industriesHome: { href: ROUTES.industries.path, text: LABELS.industries },
+  yayinlarHome: { href: ROUTES.yayinlar.path, text: LABELS.publications },
+  publicationsHome: {
     href: ROUTES.publications.path,
     text: LABELS.publications,
   },
-  tools: { href: ROUTES.tools.path, text: LABELS.tools },
-  contactUs: { href: ROUTES.contactUs.path, text: LABELS.contactUs },
-  corporateAbout: {
-    href: ROUTES.corporateAbout.path,
-    text: LABELS.corporate_about,
-  },
+
+  araclarHome: { href: ROUTES.araclar.path, text: LABELS.tools },
+  toolsHome: { href: ROUTES.tools.path, text: LABELS.tools },
+
+  iletisimHome: { href: ROUTES.iletisim.path, text: LABELS.contactUs },
+  contactUsHome: { href: ROUTES.contactUs.path, text: LABELS.contactUs },
+
   kurumsalHakkinda: {
     href: ROUTES.kurumsalHakkinda.path,
     text: LABELS.corporate_about,
   },
-  corporateMissionVision: {
-    href: ROUTES.corporateMissionVision.path,
-    text: LABELS.corporate_missionVision,
+  corporateAbout: {
+    href: ROUTES.corporateAbout.path,
+    text: LABELS.corporate_about,
   },
   kurumsalMisyonVizyon: {
     href: ROUTES.kurumsalMisyonVizyon.path,
     text: LABELS.corporate_missionVision,
   },
-  corporateOurDirectors: {
-    href: ROUTES.corporateOurDirectors.path,
-    text: LABELS.corporate_ourDirectors,
+  corporateMissionVision: {
+    href: ROUTES.corporateMissionVision.path,
+    text: LABELS.corporate_missionVision,
   },
   kurumsalYonetimKurulu: {
     href: ROUTES.kurumsalYonetimKurulu.path,
     text: LABELS.corporate_ourDirectors,
   },
+  corporateOurDirectors: {
+    href: ROUTES.corporateOurDirectors.path,
+    text: LABELS.corporate_ourDirectors,
+  },
+  kurumsalEkip: {
+    href: ROUTES.kurumsalEkip.path,
+    text: LABELS.corporate_ourTeam,
+  },
   corporateOurTeam: {
     href: ROUTES.corporateTeam.path,
     text: LABELS.corporate_ourTeam,
-  },
-  corporateFoundationDocuments: {
-    href: ROUTES.corporateFoundingDocuments.path,
-    text: LABELS.corporate_foundationDocuments,
   },
   kurumsalKurulusBelgeleri: {
     href: ROUTES.kurumsalKurulusBelgeleri.path,
     text: LABELS.corporate_foundationDocuments,
   },
+  corporateFoundationDocuments: {
+    href: ROUTES.corporateFoundingDocuments.path,
+    text: LABELS.corporate_foundationDocuments,
+  },
+  kurumsalSaydamlıkRaporları: {
+    href: ROUTES.kurumsalSaydamlıkRaporları.path,
+    text: LABELS.corporate_transparencyReports,
+  },
   corporateTransparencyReports: {
     href: ROUTES.corporateTransparencyReports.path,
     text: LABELS.corporate_transparencyReports,
+  },
+  kurumsalTeklifAl: {
+    href: ROUTES.kurumsalTeklifAl.path,
+    text: LABELS.corporate_getQuote,
   },
   corporateGetQuote: {
     href: ROUTES.corporateGetQuote.path,
     text: LABELS.corporate_getQuote,
   },
+  hizmetlerVergi: {
+    href: ROUTES.hizmetlerVergi.path,
+    text: LABELS.services_taxes,
+  },
   servicesTaxes: {
     href: ROUTES.servicesTaxes.path,
     text: LABELS.services_taxes,
+  },
+  hizmetlerDenetim: {
+    href: ROUTES.hizmetlerDenetim.path,
+    text: LABELS.services_audit,
   },
   servicesAudit: {
     href: ROUTES.servicesAudit.path,
     text: LABELS.services_audit,
   },
+  hizmetlerDanismanlik: {
+    href: ROUTES.hizmetlerDanismanlik.path,
+    text: LABELS.services_advisory,
+  },
   servicesAdvisory: {
     href: ROUTES.servicesAdvisory.path,
     text: LABELS.services_advisory,
+  },
+  hizmetlerDiger: {
+    href: ROUTES.hizmetlerDiger.path,
+    text: LABELS.services_other,
   },
   servicesOther: {
     href: ROUTES.servicesOther.path,
     text: LABELS.services_other,
   },
+  sektorlerUretim: {
+    href: ROUTES.sektorlerUretim.path,
+    text: LABELS.industries_production,
+  },
   industriesProduction: {
     href: ROUTES.industriesProduction.path,
     text: LABELS.industries_production,
+  },
+
+  sektorlerEnerji: {
+    href: ROUTES.sektorlerEnerji.path,
+    text: LABELS.industries_energy,
   },
   industriesEnergy: {
     href: ROUTES.industriesEnergy.path,
     text: LABELS.industries_energy,
   },
+  sektorlerFinans: {
+    href: ROUTES.sektorlerFinans.path,
+    text: LABELS.industries_financial,
+  },
   industriesFinancialServices: {
     href: ROUTES.industriesFinancialServices.path,
     text: LABELS.industries_financial,
+  },
+  sektorlerInsaat: {
+    href: ROUTES.sektorlerInsaat.path,
+    text: LABELS.industries_construction,
   },
   industriesConstruction: {
     href: ROUTES.industriesConstruction.path,
     text: LABELS.industries_construction,
   },
+  sektorlerSaglik: {
+    href: ROUTES.sektorlerSaglik.path,
+    text: LABELS.industries_pharmaceutical,
+  },
   industriesPharmaceutical: {
     href: ROUTES.industriesPharmaceutical.path,
     text: LABELS.industries_pharmaceutical,
+  },
+  sektorlerTeknoloji: {
+    href: ROUTES.sektorlerTeknoloji.path,
+    text: LABELS.industries_technology,
   },
   industriesTechnology: {
     href: ROUTES.industriesTechnology.path,
     text: LABELS.industries_technology,
   },
-
+  sektorlerPerakende: {
+    href: ROUTES.sektorlerPerakende.path,
+    text: LABELS.industries_retail,
+  },
+  industriesRetail: {
+    href: ROUTES.industriesRetail.path,
+    text: LABELS.industries_retail,
+  },
+  yayinlarHaberler: {
+    href: ROUTES.yayinlarHaberler.path,
+    text: LABELS.publications_news,
+  },
   publicationNews: {
     href: ROUTES.publicationNews.path,
     text: LABELS.publications_news,
+  },
+  yayinlarSirkuler: {
+    href: ROUTES.yayinlarSirkuler.path,
+    text: LABELS.publications_circulars,
   },
   publicationCirculars: {
     href: ROUTES.publicationCirculars.path,
     text: LABELS.publications_circulars,
   },
+  araclar: { href: ROUTES.araclar.path, text: LABELS.tools },
+  tools: { href: ROUTES.tools.path, text: LABELS.tools },
+  iletisim: { href: ROUTES.iletisim.path, text: LABELS.contactUs },
+  contactUs: { href: ROUTES.contactUs.path, text: LABELS.contactUs },
+};
 
-  contactContactUs: {
-    href: ROUTES.contactUs.path,
-    text: LABELS.contactUs,
+const BREADCRUMB_PATHS = {
+  home: {
+    items: {
+      tr: [breadcrumbPaths.home],
+      default: [breadcrumbPaths.home],
+    },
   },
-  // contactOurLocation: {
-  //   href: ROUTES.contactOurLocation.path,
-  //   text: LABELS.nav_contactUs_title,
-  // },
+
+  corporate: {
+    items: {
+      tr: [breadcrumbPaths.home, breadcrumbPaths.kurumsalHome],
+      default: [breadcrumbPaths.home, breadcrumbPaths.corporateHome],
+    },
+  },
+
+  services: {
+    items: {
+      tr: [breadcrumbPaths.home, breadcrumbPaths.hizmetlerHome],
+      default: [breadcrumbPaths.home, breadcrumbPaths.servicesHome],
+    },
+  },
+
+  industries: {
+    items: {
+      tr: [breadcrumbPaths.home, breadcrumbPaths.sektorlerHome],
+      default: [breadcrumbPaths.home, breadcrumbPaths.industriesHome],
+    },
+  },
+
+  publications: {
+    items: {
+      tr: [breadcrumbPaths.home, breadcrumbPaths.yayinlarHome],
+      default: [breadcrumbPaths.home, breadcrumbPaths.publicationsHome],
+    },
+  },
+
+  tools: {
+    items: {
+      tr: [breadcrumbPaths.home, breadcrumbPaths.araclarHome],
+      default: [breadcrumbPaths.home, breadcrumbPaths.toolsHome],
+    },
+  },
+
+  contactUs: {
+    items: {
+      tr: [breadcrumbPaths.home, breadcrumbPaths.iletisimHome],
+      default: [breadcrumbPaths.home, breadcrumbPaths.contactUsHome],
+    },
+  },
+
+  corporateAbout: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.kurumsalHome,
+        breadcrumbPaths.kurumsalHakkinda,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.corporateHome,
+        breadcrumbPaths.corporateAbout,
+      ],
+    },
+  },
+
+  corporateMissionVision: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.kurumsalHome,
+        breadcrumbPaths.kurumsalMisyonVizyon,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.corporateHome,
+        breadcrumbPaths.corporateMissionVision,
+      ],
+    },
+  },
+
+  corporateOurDirectors: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.kurumsalHome,
+        breadcrumbPaths.kurumsalYonetimKurulu,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.corporateHome,
+        breadcrumbPaths.corporateOurDirectors,
+      ],
+    },
+  },
+
+  corporateOurTeam: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.kurumsalHome,
+        breadcrumbPaths.kurumsalEkip,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.corporateHome,
+        breadcrumbPaths.corporateOurTeam,
+      ],
+    },
+  },
+  corporateFoundationDocuments: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.kurumsalHome,
+        breadcrumbPaths.kurumsalKurulusBelgeleri,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.corporateHome,
+        breadcrumbPaths.corporateFoundationDocuments,
+      ],
+    },
+  },
+
+  corporateTransparencyReports: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.kurumsalHome,
+        breadcrumbPaths.kurumsalSaydamlıkRaporları,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.corporateHome,
+        breadcrumbPaths.corporateTransparencyReports,
+      ],
+    },
+  },
+  corporateGetQuote: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.kurumsalHome,
+        breadcrumbPaths.kurumsalTeklifAl,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.corporateHome,
+        breadcrumbPaths.corporateGetQuote,
+      ],
+    },
+  },
+  servicesTaxes: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.hizmetlerHome,
+        breadcrumbPaths.hizmetlerVergi,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.servicesHome,
+        breadcrumbPaths.servicesTaxes,
+      ],
+    },
+  },
+  servicesAudit: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.hizmetlerHome,
+        breadcrumbPaths.hizmetlerDenetim,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.servicesHome,
+        breadcrumbPaths.servicesAudit,
+      ],
+    },
+  },
+  servicesAdvisory: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.hizmetlerHome,
+        breadcrumbPaths.hizmetlerDanismanlik,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.servicesHome,
+        breadcrumbPaths.servicesAdvisory,
+      ],
+    },
+  },
+  servicesOther: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.hizmetlerHome,
+        breadcrumbPaths.hizmetlerDiger,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.servicesHome,
+        breadcrumbPaths.servicesOther,
+      ],
+    },
+  },
+  industriesProduction: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.sektorlerHome,
+        breadcrumbPaths.sektorlerUretim,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.industriesHome,
+        breadcrumbPaths.industriesProduction,
+      ],
+    },
+  },
+  industriesEnergy: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.sektorlerHome,
+        breadcrumbPaths.sektorlerEnerji,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.industriesHome,
+        breadcrumbPaths.industriesEnergy,
+      ],
+    },
+  },
+  industriesFinancialServices: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.sektorlerHome,
+        breadcrumbPaths.sektorlerFinans,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.industriesHome,
+        breadcrumbPaths.industriesFinancialServices,
+      ],
+    },
+  },
+  industriesConstruction: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.sektorlerHome,
+        breadcrumbPaths.sektorlerInsaat,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.industriesHome,
+        breadcrumbPaths.industriesConstruction,
+      ],
+    },
+  },
+  industriesPharmaceutical: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.sektorlerHome,
+        breadcrumbPaths.sektorlerSaglik,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.industriesHome,
+        breadcrumbPaths.industriesPharmaceutical,
+      ],
+    },
+  },
+  industriesTechnology: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.sektorlerHome,
+        breadcrumbPaths.sektorlerTeknoloji,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.industriesHome,
+        breadcrumbPaths.industriesTechnology,
+      ],
+    },
+  },
+
+  industriesRetail: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.sektorlerHome,
+        breadcrumbPaths.sektorlerPerakende,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.industriesHome,
+        breadcrumbPaths.industriesRetail,
+      ],
+    },
+  },
+
+  publicationNews: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.yayinlarHome,
+        breadcrumbPaths.yayinlarHaberler,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.publicationsHome,
+        breadcrumbPaths.publicationNews,
+      ],
+    },
+  },
+  publicationCirculars: {
+    items: {
+      tr: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.yayinlarHome,
+        breadcrumbPaths.yayinlarSirkuler,
+      ],
+      default: [
+        breadcrumbPaths.home,
+        breadcrumbPaths.publicationsHome,
+        breadcrumbPaths.publicationCirculars,
+      ],
+    },
+  },
 };
 
 const getBreadcrumbPath = (t, path = []) => {
@@ -1354,8 +1760,8 @@ const findRouteEntry = (currPath, targetLang) => {
 export {
   ROUTES,
   ROUTE_PATHS,
-  BREADCRUMB_PATHS,
   LABELS,
+  BREADCRUMB_PATHS,
   getTopNavigation,
   getBreadcrumbPath,
   findRouteEntry,

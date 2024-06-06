@@ -1,7 +1,7 @@
 import { NEXT_INDUSTRIES } from "@/appConfig";
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import IndustryDetailPage from "@/sitePages/industries/IndustryDetailPage";
-import { ROUTES } from "@/siteConfig";
+import { BREADCRUMB_PATHS } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function SektorlerEnerji() {
@@ -9,7 +9,7 @@ export default function SektorlerEnerji() {
   const locale = useLocale();
 
   const breadcrumbs = getBreadcrumbData(
-    ROUTES.industriesEnergy.breadcrumbs,
+    BREADCRUMB_PATHS.industriesEnergy,
     locale,
     t
   );

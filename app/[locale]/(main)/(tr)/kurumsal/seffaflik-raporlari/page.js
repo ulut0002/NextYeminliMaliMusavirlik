@@ -1,13 +1,13 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import CorporateTransparencyReports from "@/sitePages/corporate/CorporateTransparencyReports";
-import { ROUTES } from "@/siteConfig";
+import { BREADCRUMB_PATHS, ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function SeffaflikRaporlari() {
   const t = useTranslations();
   const locale = useLocale();
   const breadcrumbs = getBreadcrumbData(
-    ROUTES.kurumsalSaydamlıkRaporları.breadcrumbs,
+    BREADCRUMB_PATHS.corporateTransparencyReports,
     locale,
     t
   );

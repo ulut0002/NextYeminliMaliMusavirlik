@@ -1,6 +1,6 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import CorporateMissionVision from "@/sitePages/corporate/CorporateMissionVision";
-import { ROUTES } from "@/siteConfig";
+import { BREADCRUMB_PATHS } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function KurumsalMisyonVizyon() {
@@ -8,7 +8,7 @@ export default function KurumsalMisyonVizyon() {
   const locale = useLocale();
 
   const breadcrumbs = getBreadcrumbData(
-    ROUTES.corporateMissionVision.breadcrumbs,
+    BREADCRUMB_PATHS.corporateMissionVision,
     locale,
     t
   );

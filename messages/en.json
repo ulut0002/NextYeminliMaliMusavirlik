@@ -2,7 +2,8 @@
   "generic": {
     "learnMore": "Learn More",
     "viewOneIndustry": "Explore services",
-    "viewAllIndustries": "View all industries"
+    "viewAllIndustries": "View all industries",
+    "readMore": "Read More"
   },
   "meta": {
     "home": {
@@ -187,6 +188,38 @@
       },
       "retail": {
         "description": "Our accounting services for the retail industry include inventory management, financial reporting, and tax optimization, helping retailers enhance profitability and operational efficiency."
+      }
+    }
+  },
+  "corporate": {
+    "index": {
+      "about": {
+        "title": "About Us",
+        "description": "Next Certified Public Accountants is a leading accounting firm in Turkey. We provide a wide range of services including tax advisory, audit, consulting, and more. Our team is dedicated to delivering exceptional service and personalized solutions to our clients."
+      },
+      "mission": {
+        "title": "Mission - Vision",
+        "description": "Explore our mission and vision to understand our core values and long-term objectives. We are committed to innovation and excellence in everything we do."
+      },
+      "leadership": {
+        "title": "Our Directors",
+        "description": "Get to know our experienced management team, who bring extensive industry knowledge and leadership skills. Their expertise drives our firm's success and ensures we meet our clients' needs effectively."
+      },
+      "ourTeam": {
+        "title": "Our Team",
+        "description": "Meet our team of skilled professionals, each bringing unique qualifications and expertise. Our collective knowledge and experience allow us to provide high-quality services tailored to our clients' requirements."
+      },
+      "foundingDocuments": {
+        "title": "Foundation Documents",
+        "description": "Examine our official foundation documents and certifications. These documents reflect our firm's credibility and commitment to maintaining high standards."
+      },
+      "transparencyReports": {
+        "title": "Transparency Reports",
+        "description": "Review our detailed transparency and accountability reports. We believe in openness and accountability as key components of our business practices."
+      },
+      "requestQuote": {
+        "title": "Request a Quote",
+        "description": "Obtain detailed pricing information and request a customized quote for our services. We offer competitive rates and tailored solutions to meet your specific needs."
       }
     }
   }

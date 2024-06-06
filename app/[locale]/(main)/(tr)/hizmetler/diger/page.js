@@ -1,7 +1,7 @@
 import { NEXT_SERVICES } from "@/appConfig";
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import ServiceDetailPage from "@/sitePages/services/ServiceDetailPage";
-import { ROUTES } from "@/siteConfig";
+import { BREADCRUMB_PATHS } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function HizmetlerDiger() {
@@ -9,7 +9,7 @@ export default function HizmetlerDiger() {
   const locale = useLocale();
 
   const breadcrumbs = getBreadcrumbData(
-    ROUTES.hizmetlerDiger.breadcrumbs,
+    BREADCRUMB_PATHS.servicesOther,
     locale,
     t
   );

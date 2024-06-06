@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import CorporateOurDirectors from "@/sitePages/corporate/CorporateOurDirectors";
-import { ROUTES } from "@/siteConfig";
+import { BREADCRUMB_PATHS, ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function YoneticilerimizPage() {
@@ -9,7 +9,7 @@ export default function YoneticilerimizPage() {
   const locale = useLocale();
 
   const breadcrumbs = getBreadcrumbData(
-    ROUTES.kurumsalYonetimKurulu.breadcrumbs,
+    BREADCRUMB_PATHS.corporateOurDirectors,
     locale,
     t
   );

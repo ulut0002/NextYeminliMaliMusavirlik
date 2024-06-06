@@ -1,21 +1,23 @@
-import { NEXT_SERVICES } from "@/appConfig";
+import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
+import { CONTENT } from "@/content/content";
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import { BREADCRUMB_PATHS } from "@/siteConfig";
-import ServiceDetailPage from "@/sitePages/services/ServiceDetailPage";
 import { useLocale, useTranslations } from "next-intl";
 
-export default function Audit() {
+export default function CorporateAboutUsPage() {
   const locale = useLocale();
   const t = useTranslations();
+
   const breadcrumbs = getBreadcrumbData(
-    BREADCRUMB_PATHS.servicesAudit,
+    BREADCRUMB_PATHS.corporateAbout,
     locale,
     t
   );
+
   return (
-    <ServiceDetailPage
-      service={NEXT_SERVICES.audit}
-      breadcrumbs={breadcrumbs}
-    />
+    <div>
+      {breadcrumbs}
+      <div>CorporateAboutUs</div>
+    </div>
   );
 }

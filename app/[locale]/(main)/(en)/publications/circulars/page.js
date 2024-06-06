@@ -1,6 +1,6 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import CirculerPage from "@/sitePages/publications/CirculerPage";
-import { ROUTES } from "@/siteConfig";
+import { BREADCRUMB_PATHS, ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function YayinlarSirkuler() {
@@ -8,7 +8,7 @@ export default function YayinlarSirkuler() {
   const locale = useLocale();
 
   const breadcrumbs = getBreadcrumbData(
-    ROUTES.publicationCirculars.breadcrumbs,
+    BREADCRUMB_PATHS.publicationCirculars,
     locale,
     t
   );

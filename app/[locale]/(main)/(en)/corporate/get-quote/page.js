@@ -1,6 +1,6 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import CorporateGetQuote from "@/sitePages/corporate/CorporateGetQuote";
-import { ROUTES } from "@/siteConfig";
+import { BREADCRUMB_PATHS } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function TeklifAl() {
@@ -8,7 +8,7 @@ export default function TeklifAl() {
   const locale = useLocale();
 
   const breadcrumbs = getBreadcrumbData(
-    ROUTES.corporateGetQuote.breadcrumbs,
+    BREADCRUMB_PATHS.corporateGetQuote,
     locale,
     t
   );

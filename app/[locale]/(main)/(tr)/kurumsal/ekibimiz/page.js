@@ -1,6 +1,6 @@
 import { getBreadcrumbData } from "@/lib/uiUtils";
 import CorporateOurTeam from "@/sitePages/corporate/CorporateOurTeam";
-import { ROUTES } from "@/siteConfig";
+import { BREADCRUMB_PATHS, ROUTES } from "@/siteConfig";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function KurumsalEkibimiz() {
@@ -8,7 +8,7 @@ export default function KurumsalEkibimiz() {
   const locale = useLocale();
 
   const breadcrumbs = getBreadcrumbData(
-    ROUTES.kurumsalEkip.breadcrumbs,
+    BREADCRUMB_PATHS.corporateOurTeam,
     locale,
     t
   );

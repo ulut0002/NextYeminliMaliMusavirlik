@@ -4,9 +4,6 @@ import { useLocale } from "next-intl";
 
 export default function NewsPage({ breadcrumbs }) {
   const locale = useLocale();
-  return (
-    <div>
-      <NewsServer locale={locale} breadcrumbs={breadcrumbs} />
-    </div>
-  );
+
+  return <NewsServer locale={locale} breadcrumbs={breadcrumbs} />;
 }

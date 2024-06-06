@@ -347,6 +347,98 @@ const ourIndustries = {
   },
 };
 
+const corporationPage = {
+  tr: {
+    title: "corporate.index.title",
+    description: "corporate.index.description",
+    items: [
+      {
+        title: "corporate.index.about.title",
+        description: "corporate.index.about.description",
+        href: ROUTE_PATHS.kurumsalHakkinda,
+      },
+      {
+        title: "corporate.index.mission.title",
+        description: "corporate.index.mission.description",
+        href: ROUTE_PATHS.kurumsalMisyonVizyon,
+      },
+      {
+        title: "corporate.index.leadership.title",
+        description: "corporate.index.leadership.description",
+        href: ROUTE_PATHS.kurumsalYonetimKurulu,
+      },
+
+      {
+        title: "corporate.index.ourTeam.title",
+        description: "corporate.index.ourTeam.description",
+        href: ROUTE_PATHS.kurumsalEkip,
+      },
+      {
+        title: "corporate.index.foundingDocuments.title",
+        description: "corporate.index.foundingDocuments.description",
+        href: ROUTE_PATHS.kurumsalKurulusBelgeleri,
+      },
+      {
+        title: "corporate.index.transparencyReports.title",
+        description: "corporate.index.transparencyReports.description",
+        href: ROUTE_PATHS.kurumsalSaydamlıkRaporları,
+      },
+      {
+        title: "corporate.index.requestQuote.title",
+        description: "corporate.index.requestQuote.description",
+        href: ROUTE_PATHS.kurumsalTeklifAl,
+      },
+    ],
+  },
+  default: {
+    title: "corporate.index.title",
+    description: "corporate.index.description",
+    items: [
+      {
+        title: "corporate.index.about.title",
+        description: "corporate.index.about.description",
+        href: ROUTE_PATHS.corporateAbout,
+      },
+      {
+        title: "corporate.index.mission.title",
+        description: "corporate.index.mission.description",
+        href: ROUTE_PATHS.corporateMissionVision,
+      },
+      {
+        title: "corporate.index.leadership.title",
+        description: "corporate.index.leadership.description",
+        href: ROUTE_PATHS.corporateOurDirectors,
+      },
+
+      {
+        title: "corporate.index.ourTeam.title",
+        description: "corporate.index.ourTeam.description",
+        href: ROUTE_PATHS.corporateTeam,
+      },
+      {
+        title: "corporate.index.foundingDocuments.title",
+        description: "corporate.index.foundingDocuments.description",
+        href: ROUTE_PATHS.corporateFoundingDocuments,
+      },
+      {
+        title: "corporate.index.transparencyReports.title",
+        description: "corporate.index.transparencyReports.description",
+        href: ROUTE_PATHS.corporateTransparencyReports,
+      },
+      {
+        title: "corporate.index.requestQuote.title",
+        description: "corporate.index.requestQuote.description",
+        href: ROUTE_PATHS.corporateGetQuote,
+      },
+    ],
+  },
+};
+
+const corporate = {
+  tr: corporationPage.tr,
+  default: corporationPage.default,
+};
+
 const CONTENT = {
   main: {
     carousel: {
@@ -362,6 +454,12 @@ const CONTENT = {
     ourIndustries: {
       tr: ourIndustries.tr,
       default: ourIndustries.default,
+    },
+  },
+  corporate: {
+    main: {
+      tr: corporate.tr,
+      default: corporate.default,
     },
   },
 };

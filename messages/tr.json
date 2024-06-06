@@ -3,7 +3,8 @@
     "learnMore": "Detaylar",
     "viewAllIndustries": "Tüm sektörleri görüntüle",
     "viewOneIndustry": "İncele",
-    "viewAllIndustries": "Bütün sektörleri görüntüle"
+    "viewAllIndustries": "Bütün sektörleri görüntüle",
+    "readMore": "Devamını Oku"
   },
   "meta": {
     "home": {
@@ -188,6 +189,38 @@
       },
       "retail": {
         "description": "Perakende sektörü için muhasebe hizmetlerimiz, envanter yönetimi, finansal raporlama ve vergi optimizasyonunu içerir, perakendecilerin karlılığı ve operasyonel verimliliği artırmasına yardımcı olur."
+      }
+    }
+  },
+  "corporate": {
+    "index": {
+      "about": {
+        "title": "Hakkımızda",
+        "description": "Next Yeminli Mali Müşavirlik, Türkiye'nin önde gelen muhasebe firmalarından biridir. Vergi danışmanlığı, denetim, danışmanlık ve daha birçok hizmet sunuyoruz. Ekibimiz, müşterilerimize olağanüstü hizmet ve kişiselleştirilmiş çözümler sunmaya kendini adamıştır."
+      },
+      "mission": {
+        "title": "Misyon - Vizyon",
+        "description": "Temel değerlerimizi ve uzun vadeli hedeflerimizi anlamak için misyonumuzu ve vizyonumuzu keşfedin. Yenilikçilik ve mükemmeliyete olan bağlılığımızı her şeyde sürdürüyoruz."
+      },
+      "leadership": {
+        "title": "Yönetim Kadromuz",
+        "description": "Sektörde geniş bilgi ve liderlik becerilerine sahip deneyimli yönetim ekibimizi tanıyın. Onların uzmanlığı, firmamızın başarısını yönlendirir ve müşterilerimizin ihtiyaçlarını etkili bir şekilde karşılamamızı sağlar."
+      },
+      "ourTeam": {
+        "title": "Ekibimiz",
+        "description": "Her biri benzersiz niteliklere ve uzmanlığa sahip yetenekli profesyonel ekibimizle tanışın. Kolektif bilgi ve deneyimimiz, müşterilerimizin ihtiyaçlarına uygun yüksek kaliteli hizmetler sunmamıza olanak tanır."
+      },
+      "foundingDocuments": {
+        "title": "Kuruluş Belgeleri",
+        "description": "Resmi kuruluş belgelerimizi ve sertifikalarımızı inceleyin. Bu belgeler, firmamızın güvenilirliğini ve yüksek standartları koruma taahhüdümüzü yansıtır."
+      },
+      "transparencyReports": {
+        "title": "Şeffaflık Raporları",
+        "description": "Ayrıntılı şeffaflık ve hesap verebilirlik raporlarımızı inceleyin. İş uygulamalarımızın temel bileşenleri olarak açıklık ve hesap verebilirliğe inanıyoruz."
+      },
+      "requestQuote": {
+        "title": "Teklif İste",
+        "description": "Hizmetlerimiz için ayrıntılı fiyat bilgisi alın ve kişiselleştirilmiş bir teklif talep edin. Rekabetçi fiyatlar ve ihtiyaçlarınıza uygun çözümler sunuyoruz."
       }
     }
   }

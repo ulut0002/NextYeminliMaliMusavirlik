@@ -76,7 +76,6 @@ export default function IndustryListClient({ data, locale }) {
 
   const handleLinkClick = (e, index) => {
     e.preventDefault();
-    // console.log("clicked", index);
     setSelectedIndex(index);
     setSelectedIndustry(data.items[parseInt(index, 10)]);
     setLocalStorage(LOCAL_STORAGE_KEYS.SELECTED_INDUSTRY, index);

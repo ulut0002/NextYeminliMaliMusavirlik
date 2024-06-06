@@ -1,20 +1,5 @@
-import { getBreadcrumbData } from "@/lib/uiUtils";
-import CorporateOurDirectors from "@/sitePages/corporate/CorporateOurDirectors";
-import { ROUTES } from "@/siteConfig";
-import { useLocale, useTranslations } from "next-intl";
+import CorporateMain from "@/sitePages/corporate/CorporateMain";
 
 export default function KurumsalPage() {
-  const t = useTranslations();
-  const locale = useLocale();
-
-  const breadcrumbs = getBreadcrumbData(
-    ROUTES.corporateOurDirectors.breadcrumbs,
-    locale,
-    t
-  );
-  return (
-    <CorporateOurDirectors breadcrumbs={breadcrumbs}>
-      KurumsalPage
-    </CorporateOurDirectors>
-  );
+  return <CorporateMain />;
 }

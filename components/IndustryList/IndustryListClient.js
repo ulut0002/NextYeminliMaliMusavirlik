@@ -1,11 +1,15 @@
 "use client";
 
+import { LOCAL_STORAGE_KEYS } from "@/lib/constants";
+import { getLocalStorage, setLocalStorage } from "@/lib/utils";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 // import Skeleton from "../Skeleton/Skeleton";
 
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import FinancialServicesSvg from "../SVG/FinancialServicesSvg";
+import Svg from "../SVG/Svg";
 
 function IndustryContent({ selectedIndustry }) {
   // Simulating a delay for the suspense demo
@@ -18,6 +22,7 @@ function IndustryContent({ selectedIndustry }) {
 
 export default function IndustryListClient({ data, locale }) {
   const [selectedIndustry, setSelectedIndustry] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const {
     mainTitle,
@@ -29,40 +34,52 @@ export default function IndustryListClient({ data, locale }) {
   } = data;
 
   useEffect(() => {
+    const selectedValue = getLocalStorage(LOCAL_STORAGE_KEYS.SELECTED_INDUSTRY);
+
     if (data.items && data.items.length) {
-      setSelectedIndustry(data.items[0]);
+      if (!isNaN(selectedValue) && data.items[selectedValue]) {
+        setSelectedIndex(selectedValue);
+        setSelectedIndustry(data.items[parseInt(selectedValue, 10)]);
+      } else {
+        setSelectedIndustry(data.items[0]);
+        setSelectedIndex(0);
+      }
     }
-  }, [data]);
+  }, []);
 
   const handleIndustryChange = (e) => {
-    setSelectedIndustry(items[e.target.value] || null);
+    const value = e.target.value;
+    setSelectedIndustry(items[value] || null);
+    if (!isNaN(value)) {
+      setSelectedIndex(parseInt(value, 10));
+      setLocalStorage(LOCAL_STORAGE_KEYS.SELECTED_INDUSTRY, value);
+    }
   };
 
-  console.log(data);
-
   return (
-    <section className='grid grid-cols-1 lg:grid lg:grid-cols-3 bg-gray-200 py-10 px-2 gap-4 '>
-      <h1 className='title'>{mainTitle}</h1>
-      <h2 className='industries-title'>{title}</h2>
+    <section>
+      <div className=' lg:hidden grid grid-cols-1  bg-gray-200 py-10 px-2 gap-4'>
+        <h1 className='title'>{mainTitle}</h1>
+        <h2 className='industries-title'>{title}</h2>
+        {items && items.length && (
+          <div className='block lg:hidden'>
+            <select
+              className='block w-full px-4 py-2 pr-8 bg-white border border-gray-300 rounded shadow leading-tight focus:outline-none focus:shadow-outline'
+              onChange={handleIndustryChange}
+              value={selectedIndex}
+            >
+              {items.map((item, index) => {
+                const { title } = item;
+                return (
+                  <option key={index} value={index}>
+                    {title}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+        )}
 
-      {items && items.length && (
-        <div className='block lg:hidden'>
-          <select
-            defaultValue={selectedIndustry}
-            onChange={handleIndustryChange}
-          >
-            {items.map((item, index) => {
-              return (
-                <option key={item} value={index}>
-                  {item.title}
-                </option>
-              );
-            })}
-          </select>
-        </div>
-      )}
-
-      <div className='block lg:hidden'>
         <Suspense fallback={<Skeleton count={1} />}>
           <IndustryContent selectedIndustry={selectedIndustry} />
         </Suspense>
@@ -77,7 +94,35 @@ export default function IndustryListClient({ data, locale }) {
         <p className='hidden lg:block'>{ctaLabelAllIndustries}</p>
       </div>
 
-      <div className='hidden lg:block'></div>
+      <div className='hidden lg:grid lg:grid-cols-3 lg:auto-rows-auto bg-blue-gray-100 rounded-xl p-4'>
+        <div className='col-span-3'>
+          <h1 className='title'>{mainTitle}</h1>
+          <h2 className='industries-title'>{title}</h2>
+        </div>
+        <div className='col-span-1'>
+          <div className='grid grid-cols-1 gap-0'>
+            {items && items.length && (
+              <ul className='flex flex-col gap-3'>
+                {items.map((item, index) => {
+                  const { title, href, icon } = item;
+                  return (
+                    <li key={index} value={index}>
+                      <div className='flex flex-row gap-2'>
+                        {icon && <Svg icon={icon} />}
+                        <Link href={href ? href : "/"}>{title}</Link>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+        </div>
+        <div className='col-span-2'>
+          <div>The image</div>
+          <div>The content</div>
+        </div>
+      </div>
     </section>
   );
 }

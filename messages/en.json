@@ -1,7 +1,8 @@
 {
   "generic": {
     "learnMore": "Learn More",
-    "viewOneIndustry": "Explore services"
+    "viewOneIndustry": "Explore services",
+    "viewAllIndustries": "View all industries"
   },
   "meta": {
     "home": {

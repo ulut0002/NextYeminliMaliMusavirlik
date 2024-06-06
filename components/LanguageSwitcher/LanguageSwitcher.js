@@ -17,8 +17,6 @@ export default function LanguageSwitcher({ style }) {
     // router.push(newPath);
     const newPath = switchLanguage(locale, newLang, pathname);
 
-    console.log("newPath", newPath);
-
     if (newPath) {
       router.push(newPath);
     }

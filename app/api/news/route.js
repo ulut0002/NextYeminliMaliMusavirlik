@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { getNews } from "./service";
 
 export async function GET(req) {
-  console.log("here");
   const { searchParams } = new URL(req.url);
   const keyword = searchParams.get("keyword");
   const year = searchParams.get("year");

@@ -20,8 +20,6 @@ export default function MainPageCarouselServer() {
       const newItems = items.map((item) => {
         const { title = "", description = "", href } = item;
 
-        console.log("href: ", href);
-
         return {
           ...item,
           title: t(title),

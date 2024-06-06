@@ -1,5 +1,9 @@
 {
-  "generic": {},
+  "generic": {
+    "learnMore": "了解更多",
+    "viewAllIndustries": "查看所有行业",
+    "viewOneIndustry": "探索服务"
+  },
   "meta": {
     "home": {
       "title": "Next 注册会计师",
@@ -114,6 +118,29 @@
     "title": "Next 注册会计师"
   },
   "main": {
+    "carousel": {
+      "ctaLabel": "了解更多",
+      "image1": {
+        "title": "鉴证和审计服务",
+        "description": "确保法律记录和交易符合税收相关法律义务的合规审计"
+      },
+      "image2": {
+        "title": "信息服务",
+        "description": "涉及税务管辖权和诉讼的服务，以及延期和分期安排"
+      },
+      "image3": {
+        "title": "独立审计服务",
+        "description": "通过我们高质量、技术驱动的方法进行基于风险的财务报表审计。"
+      },
+      "image4": {
+        "title": "投资和出口激励咨询",
+        "description": "通过我们的专业咨询服务，在战略规划和资本事件中驾驭不确定性和复杂性。"
+      },
+      "image5": {
+        "title": "咨询服务",
+        "description": "在并购和分立中确定公司的权利和义务，并管理转让定价系统"
+      }
+    },
     "ourServices": {
       "title": "我们的服务",
       "description": "Next 注册会计师为客户提供税务咨询、审计、咨询和其他服务。",
@@ -132,6 +159,31 @@
       "other": {
         "title": "其他服务",
         "description": "获取有关我们其他服务的详细信息。"
+      }
+    },
+    "ourIndustries": {
+      "mainTitle": "我们服务的行业",
+      "title": "Next 提供广泛的相关行业产品和对领先实践的深刻见解。",
+      "production": {
+        "description": "我们公司为生产行业提供全面的会计和财务服务，确保高效的成本管理和财务规划。"
+      },
+      "energy": {
+        "description": "我们为能源行业提供专业的会计解决方案，帮助企业应对能源财务、合规和投资规划的复杂性。"
+      },
+      "financial": {
+        "description": "我们在金融行业的专业知识包括强大的会计、审计和咨询服务，旨在支持金融机构实现监管合规和战略增长。"
+      },
+      "construction": {
+        "description": "我们为建筑行业提供针对性的会计服务，专注于项目成本控制、财务报告和税务规划，以优化您的业务运营。"
+      },
+      "pharmaceutical": {
+        "description": "我们的公司为制药公司提供精确的会计、财务管理和合规服务，确保在高度监管的行业中顺利运营和遵守法规。"
+      },
+      "technology": {
+        "description": "我们为科技公司提供专业的会计和咨询服务，帮助进行财务规划、投资策略和合规管理，以推动创新和增长。"
+      },
+      "retail": {
+        "description": "我们的零售行业会计服务包括库存管理、财务报告和税务优化，帮助零售商提高盈利能力和运营效率。"
       }
     }
   }

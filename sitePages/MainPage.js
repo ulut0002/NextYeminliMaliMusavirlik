@@ -1,3 +1,4 @@
+import ContactUs from "@/components/ContactUs/ContactUs";
 import IndustryListServer from "@/components/IndustryList/IndustryListServer";
 import MainPageCarouselClient from "@/components/MainPageCarousel/MainPageCarouselClient";
 import MainPageCarouselServer from "@/components/MainPageCarousel/MainPageCarouselServer";
@@ -13,6 +14,7 @@ export default function MainPage() {
 
       <ServiceList />
       <IndustryListServer />
+      <ContactUs />
     </div>
   );
 }

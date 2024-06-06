@@ -7,6 +7,22 @@ const heroImages = {
   image3: "@/public/images/hero3.jpg",
   image4: "@/public/images/hero4.jpeg",
   image5: "@/public/images/hero5.jpeg",
+  cnImage1: "@/public/images/hero-cn-1.jpeg",
+  cnImage2: "@/public/images/hero-cn-2.jpeg",
+  cnImage3: "@/public/images/hero-cn-3.jpeg",
+  ruImage1: "@/public/images/hero-ru-1.jpeg",
+  ruImage2: "@/public/images/hero-ru-2.jpeg",
+  ruImage3: "@/public/images/hero-ru-3.jpeg",
+};
+
+const industryImages = {
+  energy: "@/public/images/industries/energy.jpeg",
+  financial: "@/public/images/industries/financial.jpeg",
+  construction: "@/public/images/industries/construction.jpeg",
+  pharmaceutical: "@/public/images/industries/pharmaceutical.jpeg",
+  production: "@/public/images/industries/production.jpeg",
+  retail: "@/public/images/industries/retail.jpeg",
+  technology: "@/public/images/industries/technology.jpeg",
 };
 
 const mainCarousel = {
@@ -46,6 +62,79 @@ const mainCarousel = {
       },
     ],
   },
+  zh: {
+    ctaLabel: "generic.learnMore",
+    items: [
+      {
+        title: "main.carousel.image1.title",
+        description: "main.carousel.image1.description",
+        href: ROUTE_PATHS.corporateAbout,
+        ctaLabel: "generic.readOurStory",
+        image: heroImages.cnImage1,
+      },
+      {
+        title: "main.carousel.image2.title",
+        description: "main.carousel.image2.description",
+        href: ROUTE_PATHS.servicesTaxes,
+        image: heroImages.cnImage2,
+      },
+      {
+        title: "main.carousel.image3.title",
+        description: "main.carousel.image3.description",
+        href: ROUTE_PATHS.servicesAudit,
+        image: heroImages.cnImage3,
+      },
+      {
+        title: "main.carousel.image4.title",
+        description: "main.carousel.image4.description",
+        href: ROUTE_PATHS.servicesAdvisory,
+        image: heroImages.image4,
+      },
+      {
+        title: "main.carousel.image5.title",
+        description: "main.carousel.image5.description",
+        href: ROUTE_PATHS.industries,
+        image: heroImages.image5,
+      },
+    ],
+  },
+  ru: {
+    ctaLabel: "generic.learnMore",
+    items: [
+      {
+        title: "main.carousel.image1.title",
+        description: "main.carousel.image1.description",
+        href: ROUTE_PATHS.corporateAbout,
+        ctaLabel: "generic.readOurStory",
+        image: heroImages.ruImage1,
+      },
+      {
+        title: "main.carousel.image2.title",
+        description: "main.carousel.image2.description",
+        href: ROUTE_PATHS.servicesTaxes,
+        image: heroImages.ruImage2,
+      },
+      {
+        title: "main.carousel.image3.title",
+        description: "main.carousel.image3.description",
+        href: ROUTE_PATHS.servicesAudit,
+        image: heroImages.ruImage3,
+      },
+      {
+        title: "main.carousel.image4.title",
+        description: "main.carousel.image4.description",
+        href: ROUTE_PATHS.servicesAdvisory,
+        image: heroImages.image4,
+      },
+      {
+        title: "main.carousel.image5.title",
+        description: "main.carousel.image5.description",
+        href: ROUTE_PATHS.industries,
+        image: heroImages.image5,
+      },
+    ],
+  },
+
   default: {
     ctaLabel: "generic.learnMore",
     items: [
@@ -150,49 +239,49 @@ const ourIndustries = {
       {
         title: LABELS.industries_production,
         description: "main.ourIndustries.production.description",
-        image: "",
+        image: industryImages.production,
         href: ROUTE_PATHS.sektorlerUretim,
         icon: SVG_IMAGES.PRODUCTION,
       },
       {
         title: LABELS.industries_energy,
         description: "main.ourIndustries.energy.description",
-        image: "",
+        image: industryImages.energy,
         href: ROUTE_PATHS.sektorlerEnerji,
         icon: SVG_IMAGES.ENERGY,
       },
       {
         title: LABELS.industries_financial,
         description: "main.ourIndustries.financial.description",
-        image: "",
+        image: industryImages.financial,
         href: ROUTE_PATHS.sektorlerFinans,
         icon: SVG_IMAGES.FINANCIAL,
       },
       {
         title: LABELS.industries_construction,
         description: "main.ourIndustries.construction.description",
-        image: "",
+        image: industryImages.construction,
         href: ROUTE_PATHS.sektorlerInsaat,
         icon: SVG_IMAGES.CONSTRUCTION,
       },
       {
         title: LABELS.industries_pharmaceutical,
         description: "main.ourIndustries.pharmaceutical.description",
-        image: "",
+        image: industryImages.pharmaceutical,
         href: ROUTE_PATHS.sektorlerSaglik,
         icon: SVG_IMAGES.PHARMACEUTICAL,
       },
       {
         title: LABELS.industries_technology,
         description: "main.ourIndustries.technology.description",
-        image: "",
+        image: industryImages.technology,
         href: ROUTE_PATHS.sektorlerTeknoloji,
         icon: SVG_IMAGES.TECHNOLOGY,
       },
       {
         title: LABELS.industries_retail,
         description: "main.ourIndustries.retail.description",
-        image: "",
+        image: industryImages.retail,
         href: ROUTE_PATHS.sektorlerPerakende,
         icon: SVG_IMAGES.RETAIL,
       },
@@ -208,49 +297,49 @@ const ourIndustries = {
       {
         title: LABELS.industries_production,
         description: "main.ourIndustries.production.description",
-        image: "",
+        image: industryImages.production,
         href: ROUTE_PATHS.industriesProduction,
         icon: SVG_IMAGES.PRODUCTION,
       },
       {
         title: LABELS.industries_energy,
         description: "main.ourIndustries.energy.description",
-        image: "",
+        image: industryImages.energy,
         href: ROUTE_PATHS.industriesEnergy,
         icon: SVG_IMAGES.ENERGY,
       },
       {
         title: LABELS.industries_financial,
         description: "main.ourIndustries.financial.description",
-        image: "",
+        image: industryImages.financial,
         href: ROUTE_PATHS.industriesFinancial,
         icon: SVG_IMAGES.FINANCIAL,
       },
       {
         title: LABELS.industries_construction,
         description: "main.ourIndustries.construction.description",
-        image: "",
+        image: industryImages.construction,
         href: ROUTE_PATHS.industriesConstruction,
         icon: SVG_IMAGES.CONSTRUCTION,
       },
       {
         title: LABELS.industries_pharmaceutical,
         description: "main.ourIndustries.pharmaceutical.description",
-        image: "",
+        image: industryImages.pharmaceutical,
         href: ROUTE_PATHS.industriesPharmaceutical,
         icon: SVG_IMAGES.PHARMACEUTICAL,
       },
       {
         title: LABELS.industries_technology,
         description: "main.ourIndustries.technology.description",
-        image: "",
+        image: industryImages.technology,
         href: ROUTE_PATHS.industriesTechnology,
         icon: SVG_IMAGES.TECHNOLOGY,
       },
       {
         title: LABELS.industries_retail,
         description: "main.ourIndustries.retail.description",
-        image: "",
+        image: industryImages.retail,
         href: ROUTE_PATHS.industriesRetail,
         icon: SVG_IMAGES.RETAIL,
       },
@@ -262,6 +351,8 @@ const CONTENT = {
   main: {
     carousel: {
       tr: mainCarousel.tr,
+      zh: mainCarousel.zh,
+      ru: mainCarousel.ru,
       default: mainCarousel.default,
     },
     ourServices: {

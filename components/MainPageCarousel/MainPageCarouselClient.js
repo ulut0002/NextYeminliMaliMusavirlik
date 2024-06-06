@@ -1,10 +1,16 @@
 "use client";
-import { createUrl } from "@/lib/utils";
 import hero1 from "@/public/images/hero1.jpg";
 import hero2 from "@/public/images/hero2.jpeg";
 import hero3 from "@/public/images/hero3.jpg";
 import hero4 from "@/public/images/hero4.jpeg";
 import hero5 from "@/public/images/hero5.jpeg";
+import cnHero1 from "@/public/images/hero-cn-1.jpeg";
+import cnHero2 from "@/public/images/hero-cn-2.jpeg";
+import cnHero3 from "@/public/images/hero-cn-3.jpeg";
+import ruHero1 from "@/public/images/hero-ru-1.jpeg";
+import ruHero2 from "@/public/images/hero-ru-2.jpeg";
+import ruHero3 from "@/public/images/hero-ru-3.jpeg";
+
 import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,6 +23,12 @@ const imageMap = {
   "@/public/images/hero3.jpg": hero3,
   "@/public/images/hero4.jpeg": hero4,
   "@/public/images/hero5.jpeg": hero5,
+  "@/public/images/hero-cn-1.jpeg": cnHero1,
+  "@/public/images/hero-cn-2.jpeg": cnHero2,
+  "@/public/images/hero-cn-3.jpeg": cnHero3,
+  "@/public/images/hero-ru-1.jpeg": ruHero1,
+  "@/public/images/hero-ru-2.jpeg": ruHero2,
+  "@/public/images/hero-ru-3.jpeg": ruHero3,
 };
 
 export default function MainPageCarouselClient({ data, locale }) {

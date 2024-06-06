@@ -42,27 +42,26 @@ export default async function Footer() {
   });
 
   return (
-    <footer className='text-xs  flex flex-col  items-center justify-between '>
-      <div className='mx-auto'>Image here</div>
-      <div className='mx-auto'>Smart decisions. Lasting value.</div>
+    <footer className='text-xs flex flex-col items-center justify-between p-4'>
+      <div className='text-center mb-2'>Image here</div>
+      <div className='text-center mb-4'>Smart decisions. Lasting value.</div>
       <div className='w-full md:w-4/5 lg:w-3/5'>
-        <ul className='flex flex-col md:flex-row  md:justify-between '>
+        <ul className='flex flex-col md:flex-row md:justify-between'>
           {localeMenu.map((item) => (
-            <li key={item.path} className='border-t-2 md:border-none py-4 '>
-              <div className='ml-4 flex flex-col mx-auto '>
+            <li key={item.path} className='border-t-2 md:border-none py-4'>
+              <div className='ml-4 flex flex-col mx-auto'>
                 <h2 className='font-semibold p-0 m-0'>
                   <Link href={item.path}>{item.text}</Link>
                 </h2>
                 {item.subItems && (
-                  <ul className='flex flex-row md:flex-col flex-wrap ml-1 mt-1 md:ml-0 list-pipe md:list-item '>
-                    {item.subItems &&
-                      item.subItems.map((subItem) => (
-                        <li key={subItem.text} className='m-0 '>
-                          <Link className='link' href={subItem.path}>
-                            {subItem.text}
-                          </Link>
-                        </li>
-                      ))}
+                  <ul className='flex flex-wrap flex-row lg:flex-col ml-1 mt-1 md:ml-0 list-pipe md:list-item'>
+                    {item.subItems.map((subItem) => (
+                      <li key={subItem.text} className='m-0'>
+                        <Link className='link' href={subItem.path}>
+                          {subItem.text}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 )}
               </div>

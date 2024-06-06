@@ -8,8 +8,26 @@ import { Suspense, useEffect, useState } from "react";
 
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import FinancialServicesSvg from "../SVG/FinancialServicesSvg";
 import Svg from "../SVG/Svg";
+import Image from "next/image";
+
+import energy from "@/public/images/industries/energy.jpeg";
+import finance from "@/public/images/industries/financial.jpeg";
+import pharmaceutical from "@/public/images/industries/pharmaceutical.jpeg";
+import retail from "@/public/images/industries/retail.jpeg";
+import technology from "@/public/images/industries/technology.jpeg";
+import production from "@/public/images/industries/production.jpeg";
+import construction from "@/public/images/industries/construction.jpeg";
+
+const imageMap = {
+  "@/public/images/industries/energy.jpeg": energy,
+  "@/public/images/industries/financial.jpeg": finance,
+  "@/public/images/industries/pharmaceutical.jpeg": pharmaceutical,
+  "@/public/images/industries/retail.jpeg": retail,
+  "@/public/images/industries/technology.jpeg": technology,
+  "@/public/images/industries/production.jpeg": production,
+  "@/public/images/industries/construction.jpeg": construction,
+};
 
 function IndustryContent({ selectedIndustry }) {
   // Simulating a delay for the suspense demo
@@ -56,6 +74,14 @@ export default function IndustryListClient({ data, locale }) {
     }
   };
 
+  const handleLinkClick = (e, index) => {
+    e.preventDefault();
+    // console.log("clicked", index);
+    setSelectedIndex(index);
+    setSelectedIndustry(data.items[parseInt(index, 10)]);
+    setLocalStorage(LOCAL_STORAGE_KEYS.SELECTED_INDUSTRY, index);
+  };
+
   return (
     <section>
       <div className=' lg:hidden grid grid-cols-1  bg-gray-200 py-10 px-2 gap-4'>
@@ -94,23 +120,31 @@ export default function IndustryListClient({ data, locale }) {
         <p className='hidden lg:block'>{ctaLabelAllIndustries}</p>
       </div>
 
-      <div className='hidden lg:grid lg:grid-cols-3 lg:auto-rows-auto bg-blue-gray-100 rounded-xl p-4'>
+      <div className='hidden lg:grid lg:grid-cols-3 lg:auto-rows-auto bg-blue-gray-100 rounded-xl p-4  gap-20'>
         <div className='col-span-3'>
           <h1 className='title'>{mainTitle}</h1>
           <h2 className='industries-title'>{title}</h2>
         </div>
-        <div className='col-span-1'>
+        <div className='col-span-1 '>
           <div className='grid grid-cols-1 gap-0'>
             {items && items.length && (
-              <ul className='flex flex-col gap-3'>
+              <ul className='flex flex-col gap-5'>
                 {items.map((item, index) => {
                   const { title, href, icon } = item;
                   return (
                     <li key={index} value={index}>
-                      <div className='flex flex-row gap-2'>
-                        {icon && <Svg icon={icon} />}
-                        <Link href={href ? href : "/"}>{title}</Link>
-                      </div>
+                      <Link
+                        href={href ? href : "/"}
+                        onClick={(e) => {
+                          handleLinkClick(e, index);
+                        }}
+                      >
+                        <div className='flex flex-row gap-2 items-center bg-white py-3 rounded-xl px-4 font-semibold'>
+                          {icon && <Svg icon={icon} />}
+
+                          {title}
+                        </div>
+                      </Link>
                     </li>
                   );
                 })}
@@ -118,9 +152,31 @@ export default function IndustryListClient({ data, locale }) {
             )}
           </div>
         </div>
-        <div className='col-span-2'>
-          <div>The image</div>
-          <div>The content</div>
+        <div className='col-span-2 justify-end relative flex gap-0'>
+          <div className=''>
+            {selectedIndustry && selectedIndustry.image && (
+              <Image
+                alt='something'
+                src={imageMap[selectedIndustry.image]}
+                width={800}
+                height={150}
+                className='rounded-xl'
+              ></Image>
+            )}
+          </div>
+          <div>
+            <div className='flex flex-end text-end  text-2xl font-semibold'>
+              {selectedIndustry ? selectedIndustry.description || "" : ""}
+            </div>
+            <div className='flex flex-end justify-end'>
+              <Link
+                href={selectedIndustry ? selectedIndustry.href : "/"}
+                className='button mt-4'
+              >
+                {ctaLabelOneIndustry}
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

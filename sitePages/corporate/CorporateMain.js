@@ -2,21 +2,30 @@ import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import SimpleCard from "@/components/Cards/SimpleCard";
 import { CONTENT } from "@/content/content";
 import { getBreadcrumbData } from "@/lib/uiUtils";
+import { createUrl } from "@/lib/utils";
 import { BREADCRUMB_PATHS } from "@/siteConfig";
+import { produce } from "immer";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function CorporateMain() {
   const locale = useLocale();
   const t = useTranslations();
 
-  const services =
+  let services =
     CONTENT?.corporate?.main?.[locale] ||
     CONTENT?.corporate?.main?.default ||
     null;
 
   const breadcrumbs = getBreadcrumbData(BREADCRUMB_PATHS.corporate, locale, t);
 
-  console.log("services", services);
+  services = produce(services, (draft) => {
+    draft.items = draft.items.map((item) => {
+      item.title = t(item.title);
+      item.description = t(item.description);
+      item.href = createUrl(item.href, locale);
+      return item;
+    });
+  });
 
   return (
     <div>
@@ -30,11 +39,12 @@ export default function CorporateMain() {
           services.items.length &&
           services.items.map((item, index) => {
             const { title, description, href } = item;
+
             return (
               <li key={index} className='h-full'>
                 <SimpleCard
-                  title={t(title)}
-                  description={t(description)}
+                  title={title}
+                  description={description}
                   linkText={t("generic.readMore")}
                   url={href}
                 />

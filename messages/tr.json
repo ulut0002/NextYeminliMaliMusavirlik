@@ -223,5 +223,24 @@
         "description": "Hizmetlerimiz için ayrıntılı fiyat bilgisi alın ve kişiselleştirilmiş bir teklif talep edin. Rekabetçi fiyatlar ve ihtiyaçlarınıza uygun çözümler sunuyoruz."
       }
     }
+  },
+  "corporate_aboutUs": {
+    "title": "Hakkımızda",
+    "line0": "Next Yeminli Mali Müşavirlik (Next YMM) olarak, kurucularımız Metin Arslan ve Soner Altıoğlu liderliğinde 2013 yılında kurulduk. Şirketimiz, yerli ve uluslararası şirketlerin bağımsız denetim, vergi danışmanlığı ve mali çözümler ihtiyaçlarını en iyi şekilde karşılamak amacıyla faaliyet göstermektedir.",
+    "line1": "Ekibimiz, denetim, vergi planlaması ve danışmanlık hizmetlerinde uzmanlaşmış, deneyimli ve yetkin yeminli mali müşavirlerden ve denetçilerden oluşmaktadır. Hizmet verdiğimiz sektörler arasında inşaat, tekstil, bilişim, sağlık, enerji, metal-makina, gıda, ulaşım ve plastik gibi pek çok farklı alan bulunmaktadır. Bu sektörlerdeki bilgi birikimimizi mali mevzuatla harmanlayarak, müşterilerimize en yüksek kalitede hizmet sunmayı hedefliyoruz.",
+    "line2": "Next YMM olarak, müşterilerimizin mali yapılarını profesyonel bir yaklaşımla değerlendirir ve geliştiririz. Vergi denetimi, vergi uyuşmazlıkları, KDV iadeleri, iç denetim ve danışmanlık hizmetlerimiz ile müşterilerimize değer katmayı amaçlıyoruz. Hizmet anlayışımız, müşterilerimize artı değer sağlamak, vergi ve mali riskleri minimize etmek ve maliyet yönetiminde daha fazla kara odaklanmayı sağlamaktır.",
+    "line3": "Modern ofisimizde, güncel mevzuatı yakından takip eden, mesleki seminer ve eğitimlere katılarak sürekli gelişim gösteren uzman kadromuz ile müşterilerimize doğru, hızlı ve güvenilir hizmet sunmaktayız. Denetim çalışmalarımızda bilgisayar destekli denetim programlarını kullanarak, en pratik yöntemlerle ve en kısa sürede sonuç almayı sağlıyoruz. Ayrıca, müşterilerimizin muhasebe ve finans departmanlarında çalışan personeline sektörel mali hukuk eğitimi ve danışmanlık hizmetleri sunuyoruz.",
+    "line4": "Misyonumuz, etik ilkelere bağlı kalarak, sorumluluk bilinciyle titiz ve şeffaf hizmet sunmak, müşterilerimizin vergisel sorunlarını çözmek ve hedeflerine etkin bir şekilde ulaşmalarını sağlamaktır. Next YMM olarak, mali mevzuatta yaşanan değişiklikleri yakından takip ederek, müşterilerimize güncel bilgi akışı sağlamakta ve mali planlamalarında rehberlik etmektedir.",
+    "line5": "Next Yeminli Mali Müşavirlik, profesyonel hizmet anlayışıyla müşterilerinin yanında yer alarak, onların iş süreçlerini kolaylaştırmak ve başarılarına katkıda bulunmak için çalışmaktadır."
+  },
+  "corporate_missionVision": {
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Next Yeminli Mali Müşavirlik (Next YMM) olarak misyonumuz, müşterilerimize en yüksek kalitede bağımsız denetim, vergi danışmanlığı ve mali çözümler sunarak, onların mali yapılarını güçlendirmek ve iş süreçlerini optimize etmektir. Etik ilkelere bağlı kalarak, sorumluluk bilinciyle hareket eden uzman kadromuz ile müşterilerimizin vergi ve mali risklerini minimize etmek, vergi denetimi ve uyuşmazlıklarını çözmek, KDV iadeleri ve iç denetim gibi hizmetlerle değer katmak için çalışıyoruz. Sürekli gelişim ve yenilik anlayışımız ile güncel mevzuatı yakından takip ediyor, sektörel bilgi birikimimizi müşterilerimize aktararak onların hedeflerine etkin bir şekilde ulaşmalarını sağlıyoruz."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Next YMM olarak vizyonumuz, Türkiye ve uluslararası alanda tanınan ve tercih edilen bir mali müşavirlik firması olmaktır. Amacımız, müşterilerimize sunduğumuz profesyonel hizmetlerle onların iş süreçlerini kolaylaştırmak ve başarılarına katkıda bulunmaktır. Teknolojiyi etkin bir şekilde kullanarak, bilgisayar destekli denetim programları ve en pratik yöntemlerle hızlı ve doğru sonuçlar elde ediyoruz. Sektörel eğitimler ve danışmanlık hizmetlerimiz ile müşterilerimizin muhasebe ve finans departmanlarının yetkinliklerini artırıyor, mali planlamalarında rehberlik ediyoruz. Gelecekte, etik değerlerimizden ödün vermeden, sektördeki liderliğimizi pekiştirmek ve daha geniş bir müşteri kitlesine ulaşmak için çalışacağız."
+    }
   }
 }

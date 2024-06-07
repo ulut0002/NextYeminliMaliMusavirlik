@@ -222,5 +222,24 @@
         "description": "Obtain detailed pricing information and request a customized quote for our services. We offer competitive rates and tailored solutions to meet your specific needs."
       }
     }
+  },
+  "corporate_aboutUs": {
+    "title": "About Us",
+    "line0": "At Next Yeminli Mali Müşavirlik (Next YMM), we were established in 2013 under the leadership of our founders, Metin Arslan and Soner Altıoğlu. Our company is dedicated to meeting the independent audit, tax consultancy, and financial solution needs of both domestic and international companies.",
+    "line1": "Our team consists of experienced and qualified sworn financial advisors and auditors specialized in auditing, tax planning, and consultancy services. The sectors we serve include construction, textiles, information technology, healthcare, energy, metal-machinery, food, transportation, and plastics. By combining our sector knowledge with financial regulations, we aim to provide our clients with the highest quality service.",
+    "line2": "At Next YMM, we evaluate and enhance our clients' financial structures with a professional approach. Our services include tax audits, tax disputes, VAT refunds, internal audits, and consultancy services designed to add value to our clients. Our service philosophy focuses on providing added value, minimizing tax and financial risks, and maximizing profitability through cost management.",
+    "line3": "In our modern office, we provide accurate, fast, and reliable services to our clients with our expert team who closely follow current regulations and continuously develop through professional seminars and training. We use computer-assisted audit programs to achieve the most practical results in the shortest time. Additionally, we offer sector-specific financial law training and consultancy services to the staff working in our clients' accounting and finance departments.",
+    "line4": "Our mission is to provide meticulous and transparent services with a commitment to ethical principles and a sense of responsibility, solving our clients' tax issues and helping them achieve their goals effectively. At Next YMM, we closely follow changes in financial legislation and provide our clients with up-to-date information and guidance in their financial planning.",
+    "line5": "Next Yeminli Mali Müşavirlik stands by its clients with a professional service approach, working to facilitate their business processes and contribute to their success. Our expertise makes us an ideal partner for foreign companies looking to navigate and succeed in the Turkish market."
+  },
+  "corporate_missionVision": {
+    "mission": {
+      "title": "Our Mission",
+      "description": "At Next Yeminli Mali Müşavirlik (Next YMM), our mission is to strengthen our clients' financial structures and optimize their business processes by providing the highest quality independent audit, tax consultancy, and financial solutions. Our team of experts adheres to ethical principles and acts with a sense of responsibility, aiming to minimize our clients' tax and financial risks, resolve tax audits and disputes, and add value through services such as VAT refunds and internal audits. We follow a continuous improvement and innovation approach, closely monitoring current regulations and transferring our sectoral knowledge to our clients to help them achieve their goals effectively."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "Our vision at Next YMM is to become a recognized and preferred financial consultancy firm in Turkey and internationally. Our goal is to facilitate our clients' business processes and contribute to their success by providing professional services. We effectively use technology to obtain accurate results quickly through computer-assisted audit programs and the most practical methods. Our sectoral training and consultancy services enhance the capabilities of our clients' accounting and finance departments and provide guidance in their financial planning. In the future, we will continue to adhere to our ethical values, strengthen our leadership in the sector, and strive to reach a broader client base."
+    }
   }
 }

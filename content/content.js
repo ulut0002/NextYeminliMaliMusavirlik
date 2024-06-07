@@ -1,5 +1,7 @@
 import { SVG_IMAGES } from "@/lib/constants";
 import { LABELS, ROUTE_PATHS } from "@/siteConfig";
+import { corporateAboutUsPage } from "./corporate_about_us";
+import { corporateMissionVisionPage } from "./corporate_mission_vision";
 
 const heroImages = {
   image1: "@/public/images/hero1.jpg",
@@ -460,6 +462,14 @@ const CONTENT = {
     main: {
       tr: corporate.tr,
       default: corporate.default,
+    },
+    aboutUs: {
+      tr: corporateAboutUsPage.tr,
+      default: corporateAboutUsPage.default,
+    },
+    missionVision: {
+      tr: corporateMissionVisionPage.tr,
+      default: corporateMissionVisionPage.default,
     },
   },
 };

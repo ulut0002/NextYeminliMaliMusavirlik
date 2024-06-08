@@ -4,7 +4,18 @@
     "viewAllIndustries": "Tüm sektörleri görüntüle",
     "viewOneIndustry": "İncele",
     "viewAllIndustries": "Bütün sektörleri görüntüle",
-    "readMore": "Devamını Oku"
+    "readMore": "Devamını Oku",
+    "metinArslan": {
+      "name": "Metin Arslan",
+      "title": "Yeminli Mali Müşavir",
+      "email": "metin.arslan@nextymmm.com"
+    },
+    "sonerAltioglu": {
+      "name": "Soner Altıoğlu",
+      "title": "Yeminli Mali Müşavir",
+      "email": "soner.altioglu@nextymmm.com"
+    },
+    "titles": {}
   },
   "meta": {
     "home": {
@@ -241,6 +252,80 @@
     "vision": {
       "title": "Vizyonumuz",
       "description": "Next YMM olarak vizyonumuz, Türkiye ve uluslararası alanda tanınan ve tercih edilen bir mali müşavirlik firması olmaktır. Amacımız, müşterilerimize sunduğumuz profesyonel hizmetlerle onların iş süreçlerini kolaylaştırmak ve başarılarına katkıda bulunmaktır. Teknolojiyi etkin bir şekilde kullanarak, bilgisayar destekli denetim programları ve en pratik yöntemlerle hızlı ve doğru sonuçlar elde ediyoruz. Sektörel eğitimler ve danışmanlık hizmetlerimiz ile müşterilerimizin muhasebe ve finans departmanlarının yetkinliklerini artırıyor, mali planlamalarında rehberlik ediyoruz. Gelecekte, etik değerlerimizden ödün vermeden, sektördeki liderliğimizi pekiştirmek ve daha geniş bir müşteri kitlesine ulaşmak için çalışacağız."
+    }
+  },
+  "corporate_ourDirectors": {
+    "title": "Yöneticilerimiz",
+    "specialty": "Uzmanlık Alanları",
+    "industries": "Sektörler",
+    "education": "Eğitim",
+    "memberships": "Üyelikler",
+    "person1": {
+      "alt": "Metin Arslan Yönetim Kurulu Başkanı",
+      "specialties": {
+        "title": "Uzmanlık Alanları",
+        "specialty1": "Vergi Planlaması",
+        "specialty2": "Denetim",
+        "specialty3": "Finansal Danışmanlık",
+        "specialty4": "Yönetim Danışmanlığı",
+        "specialty5": "İç Kontrol",
+        "specialty6": "Risk Yönetimi",
+        "specialty7": "Şirket Yeniden Yapılandırma"
+      },
+      "industries": {
+        "title": "Sektörler",
+        "industry1": "Finans",
+        "industry2": "İmalat",
+        "industry3": "Hizmet",
+        "industry4": "Sağlık",
+        "industry5": "Teknoloji",
+        "industry6": "Eğitim",
+        "industry7": "Perakende"
+      },
+      "education": {
+        "title": "Eğitim",
+        "education1": "İstanbul Üniversitesi, İşletme",
+        "education2": "Londra Ekonomi Okulu, Finans"
+      },
+      "memberships": {
+        "title": "Üyelikler",
+        "membership1": "Türkiye Serbest Muhasebeci Mali Müşavirler Odası",
+        "membership2": "Uluslararası Vergi Uzmanları Birliği"
+      }
+    },
+
+    "person2": {
+      "alt": "Soner Altıoğlu Yönetim Kurulu Üyesi",
+      "specialty": {
+        "title": "Uzmanlık Alanları",
+        "specialty1": "Vergi Planlaması",
+        "specialty2": "Denetim",
+        "specialty3": "Finansal Danışmanlık",
+        "specialty4": "Yönetim Danışmanlığı",
+        "specialty5": "İç Kontrol",
+        "specialty6": "Risk Yönetimi",
+        "specialty7": "Şirket Yeniden Yapılandırma"
+      },
+      "industries": {
+        "title": "Sektörler",
+        "industry1": "Finans",
+        "industry2": "İmalat",
+        "industry3": "Hizmet",
+        "industry4": "Sağlık",
+        "industry5": "Teknoloji",
+        "industry6": "Eğitim",
+        "industry7": "Perakende"
+      },
+      "education": {
+        "title": "Eğitim",
+        "education1": "İstanbul Üniversitesi, İşletme",
+        "education2": "Londra Ekonomi Okulu, Finans"
+      },
+      "memberships": {
+        "title": "Üyelikler",
+        "memberships1": "Türkiye Serbest Muhasebeci Mali Müşavirler Odası",
+        "memberships2": "Uluslararası Vergi Uzmanları Birliği"
+      }
     }
   }
 }

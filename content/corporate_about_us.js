@@ -1,5 +1,3 @@
-const { CONTENT_ITEM_TYPE } = require("@/lib/constants");
-
 const corporateAboutUsPage = {
   tr: {
     title: "corporate_aboutUs.title",

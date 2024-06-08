@@ -48,7 +48,7 @@ export default function CorporateMissionVision() {
 
       <div>
         <div>
-          <h2>{content.mission.title}</h2>
+          <h2 className='font-bold text-xl'>{content.mission.title}</h2>
           <div>
             {content.mission.items.map((item, index) => {
               return <p key={index}>{item.text}</p>;
@@ -57,7 +57,7 @@ export default function CorporateMissionVision() {
         </div>
 
         <div>
-          <h2>{content.vision.title}</h2>
+          <h2 className='font-bold text-xl'>{content.vision.title}</h2>
           <div>
             {content.vision.items.map((item, index) => {
               return <p key={index}>{item.text}</p>;

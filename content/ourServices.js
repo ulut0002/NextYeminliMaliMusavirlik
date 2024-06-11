@@ -1,5 +1,4 @@
 import { CONTENT_ITEM_TYPE } from "@/lib/constants";
-import { steps } from "framer-motion";
 
 const fullCertification_tr = {
   title: "ourServices.fullCertification.title",

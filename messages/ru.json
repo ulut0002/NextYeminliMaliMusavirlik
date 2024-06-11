@@ -14,6 +14,13 @@
       "name": "Soner Altıoğlu",
       "title": "Сертифицированный бухгалтер",
       "email": "soner.altioglu@nextymmm.com"
+    },
+    "service": {
+      "description": "Описание",
+      "importance": "Важность услуги",
+      "steps": "Процесс",
+      "benefits": "Преимущества",
+      "recipients": "Для кого это подходит?"
     }
   },
   "meta": {

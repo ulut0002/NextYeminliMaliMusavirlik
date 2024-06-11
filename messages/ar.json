@@ -14,6 +14,13 @@
       "name": "سونر ألطيوغلو",
       "title": "محاسب قانوني معتمد",
       "email": "soner.altioglu@nextymmm.com"
+    },
+    "service": {
+      "description": "الوصف",
+      "importance": "أهمية الخدمة",
+      "steps": "العملية",
+      "benefits": "الفوائد",
+      "recipients": "لمن هو مناسب؟"
     }
   },
   "meta": {

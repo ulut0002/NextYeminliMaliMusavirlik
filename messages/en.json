@@ -1,10 +1,22 @@
 {
   "generic": {
     "learnMore": "Learn More",
-    "viewOneIndustry": "Explore services",
-    "viewAllIndustries": "View all industries",
-    "readMore": "Read More"
+    "viewAllIndustries": "View All Industries",
+    "viewOneIndustry": "View",
+    "viewAllIndustries": "View All Industries",
+    "readMore": "Read More",
+    "metinArslan": {
+      "name": "Metin Arslan",
+      "title": "Certified Public Accountant",
+      "email": "metin.arslan@nextymmm.com"
+    },
+    "sonerAltioglu": {
+      "name": "Soner Altıoğlu",
+      "title": "Certified Public Accountant",
+      "email": "soner.altioglu@nextymmm.com"
+    }
   },
+
   "meta": {
     "home": {
       "title": "Next Certified Public Accountants",
@@ -240,6 +252,164 @@
     "vision": {
       "title": "Our Vision",
       "description": "Our vision at Next YMM is to become a recognized and preferred financial consultancy firm in Turkey and internationally. Our goal is to facilitate our clients' business processes and contribute to their success by providing professional services. We effectively use technology to obtain accurate results quickly through computer-assisted audit programs and the most practical methods. Our sectoral training and consultancy services enhance the capabilities of our clients' accounting and finance departments and provide guidance in their financial planning. In the future, we will continue to adhere to our ethical values, strengthen our leadership in the sector, and strive to reach a broader client base."
+    }
+  },
+  "corporate_ourDirectors": {
+    "title": "Our Directors",
+    "specialty": "Specialties",
+    "industries": "Industries",
+    "education": "Education",
+    "memberships": "Memberships",
+    "person1": {
+      "alt": "Metin Arslan Chairman of the Board",
+      "specialties": {
+        "title": "Specialties",
+        "specialty1": "Tax Planning",
+        "specialty2": "Audit",
+        "specialty3": "Financial Consulting",
+        "specialty4": "Management Consulting",
+        "specialty5": "Internal Control",
+        "specialty6": "Risk Management",
+        "specialty7": "Corporate Restructuring"
+      },
+      "industries": {
+        "title": "Industries",
+        "industry1": "Finance",
+        "industry2": "Manufacturing",
+        "industry3": "Service",
+        "industry4": "Healthcare",
+        "industry5": "Technology",
+        "industry6": "Education",
+        "industry7": "Retail"
+      },
+      "education": {
+        "title": "Education",
+        "education1": "Istanbul University, Business Administration",
+        "education2": "London School of Economics, Finance"
+      },
+      "memberships": {
+        "title": "Memberships",
+        "membership1": "Turkish Chamber of Certified Public Accountants",
+        "membership2": "International Tax Experts Association"
+      }
+    },
+    "person2": {
+      "alt": "Soner Altıoğlu Member of the Board",
+      "specialty": {
+        "title": "Specialties",
+        "specialty1": "Tax Planning",
+        "specialty2": "Audit",
+        "specialty3": "Financial Consulting",
+        "specialty4": "Management Consulting",
+        "specialty5": "Internal Control",
+        "specialty6": "Risk Management",
+        "specialty7": "Corporate Restructuring"
+      },
+      "industries": {
+        "title": "Industries",
+        "industry1": "Finance",
+        "industry2": "Manufacturing",
+        "industry3": "Service",
+        "industry4": "Healthcare",
+        "industry5": "Technology",
+        "industry6": "Education",
+        "industry7": "Retail"
+      },
+      "education": {
+        "title": "Education",
+        "education1": "Istanbul University, Business Administration",
+        "education2": "London School of Economics, Finance"
+      },
+      "memberships": {
+        "title": "Memberships",
+        "memberships1": "Turkish Chamber of Certified Public Accountants",
+        "memberships2": "International Tax Experts Association"
+      }
+    }
+  },
+
+  "ourServices": {
+    "tax": {
+      "title": "Tax Services",
+      "description": "Tax services include various tax planning, compliance, and return processes to help organizations fulfill their tax obligations properly."
+    },
+    "audit": {
+      "title": "Audit Services",
+      "description": "Audit services involve an independent review process to verify the accuracy of a company's financial statements and transactions."
+    },
+    "advisory": {
+      "title": "Advisory Services",
+      "description": "Advisory services provide knowledge and support in various expertise areas to guide companies in strategic decision-making processes."
+    },
+    "other": {
+      "title": "Other Services",
+      "description": "This category includes various support and expertise services that do not fit into the main categories above but still provide value to clients."
+    },
+    "fullCertification": {
+      "title": "Full Certification",
+      "description": "Full Certification involves a detailed review and approval of a company's financial statements and other financial disclosures for compliance with relevant legal and regulatory requirements. This service enhances the accuracy and reliability of financial reports, building trust among investors, creditors, and other stakeholders.",
+      "importance": "Full Certification services are particularly important in industries requiring high standards of financial reporting transparency and accuracy. This service helps companies:",
+      "importanceItem1": "Ensure legal compliance,",
+      "importanceItem2": "Manage financial risks more effectively,",
+      "importanceItem3": "Increase investor and stakeholder confidence,",
+      "importanceItem4": "Objectively assess their financial performance.",
+      "step1": "Preliminary Preparation: Gaining detailed information about the company's financial status and previous period reports.",
+      "step2": "Planning: Determining the scope and timing of the certification process.",
+      "step3": "Implementation: Detailed examination of financial statements and related documents.",
+      "step4": "Reporting: Reporting findings and results and providing necessary correction suggestions.",
+      "step5": "Follow-up: Monitoring the implementation of recommended corrections after reporting.",
+      "benefit1": "Reliable Financial Information: The accuracy of companies' financial information is critical for investment decisions. Full certification ensures the reliability of this information.",
+      "benefit2": "Compliance: Full compliance with local and international financial reporting standards.",
+      "benefit3": "Risk Management: Helps prevent financial errors and fraud.",
+      "recipients": "Full Certification services are ideal for publicly traded companies, large-scale SMEs, and companies considering investment. Additionally, it is important for any business applying for bank loans or other financial instruments."
+    },
+    "vatRefund": {
+      "title": "VAT Refund and Offset Transactions",
+      "description": "VAT Refund and Offset Transactions involve processes where VAT taxpayers can get refunds or offset excessive or incorrectly paid VAT against other tax liabilities. This service helps companies optimize their cash flow and reduce financial burdens.",
+      "importance": "VAT refund and offset transactions help companies get rid of unnecessary financial burdens and use their working capital more effectively. These services offer significant financial relief, especially for export companies and businesses with high VAT payments.",
+      "step1": "Situation Analysis: Detailed analysis of the company's VAT refund status.",
+      "step2": "Document Collection and Organization: Collecting and organizing the necessary documents for refund or offset transactions.",
+      "step3": "Application Preparation: Preparing and submitting refund or offset applications to the relevant tax authority.",
+      "step4": "Follow-up and Communication: Monitoring the application process and communicating with the tax authority when necessary.",
+      "step5": "Finalization: Completing and reporting the refund or offset transaction.",
+      "benefit1": "Improved Cash Flow: Refund of overpaid VAT directly improves cash flow.",
+      "benefit2": "Cost Management: Reducing the VAT burden for better cost management.",
+      "benefit3": "Tax Compliance: Correct management of VAT-related legal processes increases tax compliance.",
+      "recipients": "VAT Refund and Offset Transactions are important for VAT payers, especially exporters, retailers, manufacturers, and other high VAT-paying businesses. These transactions should be regularly evaluated by all VAT payers as they enable more efficient use of financial resources."
+    },
+    "taxConsultancy": {
+      "title": "Tax Consultancy",
+      "description": "Tax Consultancy services involve optimizing tax obligations, tax planning, and compliance management for both corporate and individual clients. These services ensure that clients act in accordance with tax regulations while providing strategic advice to minimize tax burdens.",
+      "importance": "Tax consultancy helps companies and individuals make accurate tax decisions within constantly changing tax regulations and complex tax structures. This service is crucial for managing tax costs, reducing potential tax risks, and maximizing legal tax advantages.",
+      "step1": "Needs Analysis: In-depth analysis of the client's current tax situation and needs.",
+      "step2": "Strategy Development: Developing tax strategies suitable for the client's financial goals.",
+      "step3": "Implementation: Implementing the developed tax strategies and making necessary adjustments.",
+      "step4": "Reporting and Review: Evaluating the effectiveness of the implemented strategies and preparing periodic reports.",
+      "step5": "Continuous Support and Consultancy: Providing ongoing consultancy to adapt to changes in tax regulations.",
+      "benefit1": "Tax Savings: Minimizing tax burdens through effective tax planning.",
+      "benefit2": "Risk-free Compliance: Full compliance with local and international tax regulations.",
+      "benefit3": "Decision Support: Considering tax factors in investment and business decisions.",
+      "benefit4": "Financial Planning and Budgeting: More effective financial planning and budgeting.",
+      "recipients": "Tax Consultancy services are especially valuable for large companies with complex tax issues, SMEs, entrepreneurs, investors, and high-net-worth individuals. These services provide the expertise needed for tax planning and reporting processes, helping clients use their financial resources more efficiently."
+    },
+    "otherCertification": {
+      "title": "Other Certification Processes",
+      "description": "Other Certification Processes involve verifying documents and reports required for specific purposes beyond standard financial reporting. This service covers certifications needed for special projects, grants, loans, or other financial transactions, helping organizations meet various financial and legal requirements.",
+      "importance": "Special certification processes play a critical role in providing financial verification required for specific situations and projects. These verifications are usually needed to prove financial credibility, ensure eligibility for grants or funds, or fulfill legal requirements for special financial transactions.",
+      "step1": "Needs Analysis: Analysis of the specific situation and documents requiring certification.",
+      "step2": "Document Preparation: Detailed preparation of the necessary documents and reports.",
+      "step3": "Certification Process: Applying necessary procedures for document certification.",
+      "step4": "Result Reporting: Reporting the results of the certification processes to the relevant parties.",
+      "step5": "Continuous Support: Providing ongoing support and consultancy services after certification processes are completed.",
+      "benefit1": "Legal Compliance: Meeting various financial and legal requirements.",
+      "benefit2": "Financial Reliability: Increasing the financial reliability of the organization.",
+      "benefit3": "Project and Funding Opportunities: Ensuring eligibility for special projects and funding.",
+      "recipients": "Other Certification Processes service is suitable for companies, NGOs, and public institutions requiring verification in special projects, investment and financing needs, or grant and fund applications. This service is especially designed for situations requiring approval of financial documents and reports for specific purposes."
+    },
+    "independentAudit": {
+      "title": "Independent Audit",
+      "description": "Independent Audit involves an objective assessment of a company's financial statements and transactions for compliance with international and local financial reporting standards. This service increases the financial transparency of companies and builds trust among stakeholders, investors, and regulatory authorities.",
+      "importance": "Independent audit not only ensures the accuracy and reliability of financial reports but also enhances a company's potential to attract investment and builds a trustworthy image in the markets. This service helps companies maintain financial health and manage financial risks."
     }
   }
 }

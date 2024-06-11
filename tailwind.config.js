@@ -10,6 +10,9 @@ const config = {
   theme: {
     listStyleType: {
       pipe: "",
+      disc: "disc",
+      square: "square",
+      decimal: "decimal",
     },
   },
   plugins: [],

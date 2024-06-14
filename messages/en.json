@@ -544,5 +544,37 @@
       "benefit4": "Secure Business Environment: Promoting a secure and transparent business environment.",
       "recipients": "Anti-Money Laundering and Financial Crime Legislation Consultancy services are suitable for companies operating in high financial crime risk sectors, especially the financial services sector. It is also important for organizations with international business structures and subject to regulatory audits."
     }
+  },
+  "ourIndustries": {
+    "main": {
+      "title": "Industries We Serve",
+      "description": "Sector Expertise and Experience",
+      "items": {
+        "1": {
+          "title": "Manufacturing",
+          "description": "About Manufacturing"
+        },
+        "2": {
+          "title": "Energy",
+          "description": "About Energy"
+        },
+        "3": {
+          "title": "Finance",
+          "description": "About Finance"
+        },
+        "4": {
+          "title": "Construction",
+          "description": "About Construction"
+        },
+        "5": {
+          "title": "Pharmaceuticals and Healthcare",
+          "description": "About Pharmaceuticals and Healthcare"
+        },
+        "6": {
+          "title": "Retail",
+          "description": "About Retail"
+        }
+      }
+    }
   }
 }

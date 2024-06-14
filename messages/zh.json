@@ -511,5 +511,37 @@
       "benefit4": "安全的业务环境：促进安全和透明的业务环境。",
       "recipients": "反洗钱和金融犯罪立法咨询服务适合在高金融犯罪风险行业运营的公司，尤其是金融服务业。它对拥有国际业务结构和受到监管审计的组织也至关重要。"
     }
+  },
+  "ourIndustries": {
+    "main": {
+      "title": "我们服务的行业",
+      "description": "行业专业知识和经验",
+      "items": {
+        "1": {
+          "title": "制造业",
+          "description": "关于制造业"
+        },
+        "2": {
+          "title": "能源",
+          "description": "关于能源"
+        },
+        "3": {
+          "title": "金融",
+          "description": "关于金融"
+        },
+        "4": {
+          "title": "建筑",
+          "description": "关于建筑"
+        },
+        "5": {
+          "title": "制药和医疗",
+          "description": "关于制药和医疗"
+        },
+        "6": {
+          "title": "零售",
+          "description": "关于零售"
+        }
+      }
+    }
   }
 }

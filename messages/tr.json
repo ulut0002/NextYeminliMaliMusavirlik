@@ -544,5 +544,37 @@
       "benefit4": "Güvenli İş Ortamı: Güvenli ve şeffaf bir iş ortamının teşvik edilmesi.",
       "recipients": "Kara Para ve Mali Suçlar Mevzuatı Danışmanlığı hizmeti, finansal hizmetler sektörü başta olmak üzere, yüksek mali suç riski taşıyan tüm sektörlerde faaliyet gösteren şirketler için uygundur. Ayrıca, uluslararası iş yapısı olan ve düzenleyici denetimlere tabi kuruluşlar için de büyük önem taşır."
     }
+  },
+  "ourIndustries": {
+    "main": {
+      "title": "Hizmet Verdiğimiz Sektörler",
+      "description": "Sektörel Uzmanlık ve Deneyim",
+      "items": {
+        "1": {
+          "title": "Üretim",
+          "description": "Üretim hakkında"
+        },
+        "2": {
+          "title": "Enerji",
+          "description": "Enerji hakkında"
+        },
+        "3": {
+          "title": "Finans",
+          "description": "Finans hakkında"
+        },
+        "4": {
+          "title": "İnşaat",
+          "description": "İnşaat hakkında"
+        },
+        "5": {
+          "title": "İlaç ve Sağlık",
+          "description": "İlaç ve Sağlık hakkında"
+        },
+        "6": {
+          "title": "Perakende",
+          "description": "Perakende hakkında"
+        }
+      }
+    }
   }
 }

@@ -13,7 +13,7 @@ export default function Breadcrumb({ data = [] }) {
 
   return (
     <div role='presentation'>
-      <Breadcrumbs separator='/'>
+      <Breadcrumbs separator='/' className='pl-0'>
         {data.map((item, index) => {
           const { href, text, isLast } = item;
 

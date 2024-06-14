@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #000;
+  --foreground: #121826;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #fff;
+    --foreground: #f2f5f9;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
@@ -51,38 +51,6 @@ body {
   .list-item > li {
     list-style-type: none;
     margin-left: 0rem;
-  }
-
-  .container {
-    @apply mx-auto max-w-screen-2xl;
-  }
-
-  .link {
-    @apply inline-block text-sm hover:underline;
-  }
-
-  .button {
-    @apply inline-block relative px-4 py-2 border border-white text-white bg-blue-900;
-  }
-
-  .button:hover {
-    @apply bg-gray-200 text-gray-900 cursor-pointer;
-  }
-
-  .ctaButton {
-    @apply rounded-full;
-  }
-
-  .ctaButton:hover {
-    /* @apply bg-gray-200; */
-  }
-
-  .title {
-    @apply uppercase font-semibold tracking-wider text-xl text-red-800;
-  }
-
-  .industries-title {
-    @apply font-semibold text-base;
   }
 
   .image-container {
@@ -156,5 +124,88 @@ body {
     position: relative;
     z-index: 2;
     /* color: white; */
+  }
+
+  .link {
+    @apply inline-block text-sm hover:underline;
+  }
+  .container {
+    @apply mx-auto max-w-screen-2xl;
+  }
+
+  .content {
+    @apply sm:px-2;
+  }
+
+  .button {
+    @apply inline-block relative px-4 py-2 border border-white text-white bg-blue-900;
+  }
+
+  .button:hover {
+    @apply bg-gray-200 text-gray-900 cursor-pointer;
+  }
+
+  .ctaButton {
+    @apply rounded-full;
+  }
+
+  .ctaButton:hover {
+    /* @apply bg-gray-200; */
+  }
+
+  .title {
+    @apply uppercase font-semibold tracking-wider text-xl text-red-800;
+  }
+
+  .industries-title {
+    @apply font-semibold text-base;
+  }
+
+  .text {
+    @apply text-sm-sm sm:text-sm-sm md:text-sm-md lg:text-sm-lg;
+  }
+}
+
+.page-title {
+  @apply text-3xl font-bold relative inline-block mb-4;
+}
+
+.page-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.page-title:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.page-hero-image {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .page-hero-image {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-hero-image {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-hero-image {
+    /* height: 18%; */
   }
 }

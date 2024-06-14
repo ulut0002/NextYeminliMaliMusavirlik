@@ -55,7 +55,7 @@ export default async function RootLayout({ children }) {
             <div className='container'>
               <NavServer />
             </div>
-            <main className='flex-grow container'>{children}</main>
+            <main className='flex-grow container '>{children}</main>
             <div className='container'>
               <Footer />
             </div>

@@ -1,4 +1,67 @@
 import { CONTENT_ITEM_TYPE } from "@/lib/constants";
+import { ROUTE_PATHS } from "@/siteConfig";
+
+const ourServices_tr = {
+  title: "ourServices.main.title",
+  description: "ourServices.main.description",
+  items: [
+    {
+      title: "ourServices.main.tax.title",
+      description: "ourServices.main.tax.description",
+      image: "",
+      url: ROUTE_PATHS.hizmetlerVergi,
+    },
+    {
+      title: "ourServices.main.audit.title",
+      description: "ourServices.main.audit.description",
+      image: "",
+      url: ROUTE_PATHS.hizmetlerDenetim,
+    },
+    {
+      title: "ourServices.main.advisory.title",
+      description: "ourServices.main.advisory.description",
+      image: "",
+      url: ROUTE_PATHS.hizmetlerDanismanlik,
+    },
+    {
+      title: "ourServices.main.other.title",
+      description: "ourServices.main.other.description",
+      image: "",
+      url: ROUTE_PATHS.hizmetlerDiger,
+    },
+  ],
+};
+
+const ourServices_default = {
+  title: "ourServices.main.title",
+  description: "ourServices.main.description",
+  items: [
+    {
+      title: "ourServices.main.tax.title",
+      description: "ourServices.main.tax.description",
+      image: "",
+      url: ROUTE_PATHS.servicesTaxes,
+    },
+    {
+      title: "ourServices.main.audit.title",
+      description: "ourServices.main.audit.description",
+      image: "",
+      url: ROUTE_PATHS.servicesAudit,
+    },
+    {
+      title: "ourServices.main.advisory.title",
+      description: "ourServices.main.advisory.description",
+      image: "",
+      url: ROUTE_PATHS.servicesAdvisory,
+    },
+    {
+      title: "ourServices.main.other.title",
+      description: "ourServices.main.other.description",
+      image: "",
+      url: ROUTE_PATHS.servicesOther,
+    },
+  ],
+};
 
 const fullCertification_tr = {
   title: "ourServices.fullCertification.title",
@@ -589,9 +652,15 @@ const ourOtherServices = {
   },
 };
 
+const ourServices = {
+  tr: ourServices_tr,
+  default: ourServices_default,
+};
+
 export {
   ourTaxServices,
   ourAuditServices,
   ourAdvisoryServices,
   ourOtherServices,
+  ourServices,
 };

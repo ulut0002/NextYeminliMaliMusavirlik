@@ -8,6 +8,8 @@ import { useLocale, useTranslations } from "next-intl";
 import owner1 from "@/public/images/people/metin_arslan.jpeg";
 import owner2 from "@/public/images/people/soner_altioglu.jpeg";
 import HorizontalCard from "@/components/Cards/HorizontalCard";
+import { aboutUsHeader, allImages } from "@/content/images";
+import Image from "next/image";
 
 export default function CorporateAboutUsPage() {
   const locale = useLocale();
@@ -38,33 +40,41 @@ export default function CorporateAboutUsPage() {
   });
 
   return (
-    <div>
+    <div className='content'>
       {breadcrumbs}
-      <h2 className='text-xl font-bold mb-4'>{content.title}</h2>
-      <div className='flex flex-col flex-grow gap-4'>
-        {content.items &&
-          content.items.map((item, index) => {
-            return (
-              <p
-                key={index}
-                className='text-sm md:text-base lg:text-lg xl:text-xl'
-              >
-                {item.text}
-              </p>
-            );
-          })}
-      </div>
-      <div className='flex flex-row gap-4 justify-center mt-4'>
-        <HorizontalCard
-          image={owner1}
-          title={"Metin Arslan"}
-          description={"Hello"}
-        />
-        <HorizontalCard
-          image={owner2}
-          title={"Soner Altıoğlu"}
-          description={"Hello"}
-        />
+      <div>
+        <h2 className='page-title'>{content.title}</h2>
+        <div className='w-full my-4 overflow-hidden mb-4 '>
+          <Image
+            src={allImages.aboutUsHeader.src}
+            alt={t(allImages.aboutUsHeader.alt)}
+            width={1200}
+            height={50}
+            className='w-full h-24 md:h-24 lg:h-24 xl:h-24 object-cover page-hero-image'
+          />
+        </div>
+        <div className='flex flex-col flex-grow gap-4'>
+          {content.items &&
+            content.items.map((item, index) => {
+              return (
+                <p key={index} className='text'>
+                  {item.text}
+                </p>
+              );
+            })}
+        </div>
+        <div className='flex flex-row gap-4 justify-center mt-4'>
+          <HorizontalCard
+            image={owner1}
+            title={"Metin Arslan"}
+            description={"Hello"}
+          />
+          <HorizontalCard
+            image={owner2}
+            title={"Soner Altıoğlu"}
+            description={"Hello"}
+          />
+        </div>
       </div>
     </div>
   );

@@ -19,8 +19,9 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { useLocale } from "next-intl";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import { CONTENT_ITEM_TYPE } from "@/lib/constants";
+import { SocialIcon } from "react-social-icons";
 
 function NavListMenu({ menuItem, setOpenNav }) {
   const { subItems, columns = 1 } = menuItem;
@@ -45,12 +46,12 @@ function NavListMenu({ menuItem, setOpenNav }) {
             setOpenNav(false);
           }}
         >
-          <MenuItem className='flex items-center gap-3 rounded-lg'>
+          <MenuItem className='nav-menu-item'>
             {icon && (
               <div className='flex items-center justify-center rounded-lg p-2 '>
                 {React.createElement(icon, {
                   strokeWidth: 2,
-                  className: "h-6 text-gray-900 w-6",
+                  className: "h-6 text-gray-900 w-6 ",
                 })}
               </div>
             )}
@@ -58,7 +59,7 @@ function NavListMenu({ menuItem, setOpenNav }) {
               <Typography
                 variant='h6'
                 color='blue-gray'
-                className='flex items-center text-sm font-bold'
+                className='flex items-center text-sm font-bold '
               >
                 {text}
               </Typography>
@@ -90,13 +91,8 @@ function NavListMenu({ menuItem, setOpenNav }) {
         }}
       >
         <div>
-          <Typography
-            as='div'
-            variant='small'
-            color='blue-gray'
-            className='font-medium'
-          >
-            <ListItem className='flex items-center gap-2 py-2 pr-4'>
+          <Typography as='div' variant='small' color='blue-gray'>
+            <ListItem className='font-medium flex items-center gap-2 py-2 pr-4 nav-main-link'>
               {menuItem.text}
             </ListItem>
           </Typography>
@@ -118,10 +114,10 @@ function NavListMenu({ menuItem, setOpenNav }) {
         placement='bottom'
       >
         <MenuHandler>
-          <Typography as='div' variant='small' className='font-medium'>
+          <Typography as='div' variant='small'>
             <ListItem
               ripple={false}
-              className='flex items-center gap-2 py-2 pr-4 font-medium text-gray-900'
+              className=' nav-main-link'
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -142,7 +138,7 @@ function NavListMenu({ menuItem, setOpenNav }) {
           </Typography>
         </MenuHandler>
 
-        <MenuList className='hidden max-w-screen-xl rounded-xl lg:block'>
+        <MenuList className='hidden max-w-screen-xl lg:block'>
           <ul className={ulClassName}>{renderItems(menuItem.subItems)}</ul>
         </MenuList>
       </Menu>
@@ -156,8 +152,6 @@ function NavListMenu({ menuItem, setOpenNav }) {
 }
 
 function NavList({ menuItems = [], setOpenNav }) {
-  const locale = useLocale();
-
   return (
     <List className='mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1'>
       {menuItems.map((menuItem) => {
@@ -175,7 +169,7 @@ function NavList({ menuItems = [], setOpenNav }) {
   );
 }
 
-export default function MegaMenuDefault({ menuItems = [] }) {
+export default function MegaMenuDefault({ menuItems = [], topInfoBar }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -186,7 +180,31 @@ export default function MegaMenuDefault({ menuItems = [] }) {
   }, []);
 
   return (
-    <Navbar className=' max-w-sc px-4 py-2 rounded-md'>
+    <Navbar className=' max-w-sc px-4 py-2 rounded-md '>
+      {topInfoBar && (
+        <div className='hidden flex-row justify-end gap-4 text-sm  md:flex'>
+          {topInfoBar.contactInfo && Array.isArray(topInfoBar.contactInfo) && (
+            <ul className='flex flex-row gap-4'>
+              {topInfoBar.contactInfo.map((item, index) => {
+                return (
+                  <li key={index} className='text-blue-gray-900 text-sm'>
+                    {item.text}
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+
+          {topInfoBar.socialMedia && Array.isArray(topInfoBar.socialMedia) && (
+            <ul className='flex flex-row gap-2 ml-0'>
+              {topInfoBar.socialMedia.map((item, index) => {
+                return <li key={index}>{item.text}</li>;
+              })}
+            </ul>
+          )}
+        </div>
+      )}
+
       <div className='flex items-center justify-between text-blue-gray-900'>
         <Link href='/'>
           <Typography
@@ -194,7 +212,7 @@ export default function MegaMenuDefault({ menuItems = [] }) {
             variant='h6'
             className='mr-4 cursor-pointer py-1.5 lg:ml-2'
           >
-            NEXT
+            NEXT YMMM
           </Typography>
         </Link>
 
@@ -204,13 +222,13 @@ export default function MegaMenuDefault({ menuItems = [] }) {
         <IconButton
           variant='text'
           color='blue-gray'
-          className='lg:hidden'
+          className='lg:hidden nav-mobile-icon'
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
-            <XMarkIcon className='h-6 w-6' strokeWidth={2} />
+            <XMarkIcon className='h-6 w-6 ' strokeWidth={2} />
           ) : (
-            <Bars3Icon className='h-6 w-6' strokeWidth={2} />
+            <Bars3Icon className='h-6 w-6 ' strokeWidth={2} />
           )}
         </IconButton>
       </div>

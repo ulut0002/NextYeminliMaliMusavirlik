@@ -3,6 +3,8 @@ import { useLocale, useTranslations } from "next-intl";
 import MegaMenuDefault from "./Nav";
 import { getTranslations } from "next-intl/server";
 import { produce } from "immer";
+import { navHeaderContent } from "@/content/header";
+import { translateText } from "@/lib/uiUtils";
 
 export default async function NavServer() {
   const locale = useLocale();
@@ -11,6 +13,9 @@ export default async function NavServer() {
   const t = await getTranslations("");
 
   let localeMenu = [];
+
+  let topInfoBar =
+    navHeaderContent[locale] || navHeaderContent["default"] || null;
 
   localeMenu = items.map((item) => {
     const newObject = {
@@ -42,5 +47,25 @@ export default async function NavServer() {
     });
   });
 
-  return <MegaMenuDefault menuItems={localeMenu} />;
+  if (topInfoBar) {
+    topInfoBar = produce(topInfoBar, (draft) => {
+      if (
+        draft.contactInfo &&
+        draft.contactInfo.length &&
+        Array.isArray(draft.contactInfo)
+      ) {
+        draft.contactInfo = translateText(draft.contactInfo, t);
+      }
+
+      if (
+        draft.socialMedia &&
+        draft.socialMedia.length &&
+        Array.isArray(draft.socialMedia)
+      ) {
+        draft.socialMedia = translateText(draft.socialMedia, t);
+      }
+    });
+  }
+
+  return <MegaMenuDefault menuItems={localeMenu} topInfoBar={topInfoBar} />;
 }

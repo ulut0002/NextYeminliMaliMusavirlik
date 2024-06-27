@@ -32,8 +32,6 @@ const imageMap = {
 };
 
 export default function MainPageCarouselClient({ data, locale }) {
-  // const images = [hero1, hero2, hero3, hero4, hero5];
-
   const { ctaLabel, items } = data;
 
   // Map the items to include the imported images
@@ -62,10 +60,10 @@ export default function MainPageCarouselClient({ data, locale }) {
               objectFit='cover'
               priority
             />
-            <div className='overlay flex flex-col gap-4'>
-              <h2 className='font-semibold'>{item.title}</h2>
-              <p className='text-md'>{item.description}</p>
-              <Link href={item.href} className='button ctaButton'>
+            <div className='carousel--container'>
+              <h2 className='header'>{item.title}</h2>
+              <p className='text '>{item.description}</p>
+              <Link href={item.href} className='button button-light'>
                 {ctaLabel}
               </Link>
             </div>

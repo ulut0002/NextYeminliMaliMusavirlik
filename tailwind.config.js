@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 
 import withMT from "@material-tailwind/react/utils/withMT";
+const colors = require("tailwindcss/colors");
+
+// import colors from "tailwind/colors";
+
 const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./sitePages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx,html}",
   ],
   theme: {
     listStyleType: {
@@ -16,6 +21,14 @@ const config = {
     },
 
     extend: {
+      colors: {
+        ...colors,
+        primaryYellowLighter: "#f7d67c",
+        primaryYellowLight: "#f5c85f",
+        primaryYellow: "#f1b319",
+        primaryYellowDark: "#e0a717",
+        primaryYellowDarker: "#b88912",
+      },
       fontSize: {
         "h1-sm": "2.986rem",
         "h2-sm": "2.488rem",

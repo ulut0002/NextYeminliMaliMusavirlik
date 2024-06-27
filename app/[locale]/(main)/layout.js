@@ -3,7 +3,6 @@ import "./globals.css";
 import { NextIntlClientProvider, useLocale, useTranslations } from "next-intl";
 import { ThemeProvider } from "@/components/MaterialUI/MaterialUI";
 import NavServer from "@/components/Nav/NavServer";
-import Head from "next/head";
 import { getTranslations } from "next-intl/server";
 import { createMetadata } from "@/lib/utils";
 import { LOCALE_TO_DIRECTION } from "@/i18n";

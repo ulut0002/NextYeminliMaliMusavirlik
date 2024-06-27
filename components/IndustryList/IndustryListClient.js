@@ -121,7 +121,7 @@ export default function IndustryListClient({ data, locale }) {
 
       <div className='hidden lg:grid lg:grid-cols-3 lg:auto-rows-auto bg-blue-gray-100 rounded-xl p-4  gap-20'>
         <div className='col-span-3'>
-          <h1 className='title'>{mainTitle}</h1>
+          <h1 className='title section-title'>{mainTitle}</h1>
           <h2 className='industries-title'>{title}</h2>
         </div>
         <div className='col-span-1 '>

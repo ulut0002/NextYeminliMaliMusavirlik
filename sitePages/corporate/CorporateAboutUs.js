@@ -5,15 +5,16 @@ import { getBreadcrumbData } from "@/lib/uiUtils";
 import { BREADCRUMB_PATHS } from "@/siteConfig";
 import { produce } from "immer";
 import { useLocale, useTranslations } from "next-intl";
-import owner1 from "@/public/images/people/metin_arslan.jpeg";
-import owner2 from "@/public/images/people/soner_altioglu.jpeg";
 import HorizontalCard from "@/components/Cards/HorizontalCard";
-import { aboutUsHeader, allImages } from "@/content/images";
+import { allImages } from "@/content/images";
 import Image from "next/image";
 
 export default function CorporateAboutUsPage() {
   const locale = useLocale();
   const t = useTranslations();
+
+  const owner1 = allImages.metinArslanImage;
+  const owner2 = allImages.sonerAltiogluImage;
 
   const breadcrumbs = getBreadcrumbData(
     BREADCRUMB_PATHS.corporateAbout,

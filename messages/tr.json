@@ -1,4 +1,5 @@
 {
+  "": "",
   "generic": {
     "learnMore": "Detaylar",
     "viewAllIndustries": "Tüm sektörleri görüntüle",
@@ -23,11 +24,29 @@
       "recipients": "Kimler İçin Uygundur?"
     }
   },
+  "globals": {
+    "twitter": "https://x.com/example",
+    "linkedin": "https://www.linkedin.com/company/example/",
+    "instagram": "https://www.instagram.com/example",
+    "facebook": "https://www.facebook.com/example",
+    "tiktok": "https://www.tiktok.com/@example",
+    "phone": "(322) 503 60 11",
+    "phone_number": "+903225036011",
+    "fax": "(322) 503 60 13",
+    "fax_number": "+903225036013",
+    "email": "info@nextymm.com",
+    "website": "https://www.nextymm.com"
+  },
   "meta": {
     "home": {
       "title": "Next Yeminli Mali Müşavirlik",
       "description": "Next Yeminli Mali Müşavirlik, Türkiye'nin önde gelen mali müşavirlik firmalarından biridir. Next Yeminli Mali Müşavirlik, müşterilerine vergi danışmanlığı, denetim, danışmanlık ve diğer hizmetler sunmaktadır.",
       "keywords": "Next Yeminli Mali Müşavirlik, mali müşavirlik, vergi danışmanlığı, denetim, danışmanlık, sektörler, yayınlar, araçlar, iletişim"
+    }
+  },
+  "aria": {
+    "main": {
+      "ourServices": "Hizmetlerimiz"
     }
   },
   "nav": {
@@ -69,7 +88,7 @@
       "title": "Hizmetlerimiz",
       "taxes": {
         "title": "Vergi Danışmanlığı",
-        "description": "Vergi danışmanlığı hizmetlerimiz hakkında detaylı bilgi alın."
+        "description": "xergi danışmanlığı hizmetlerimiz hakkında detaylı bilgi alın."
       },
       "audit": {
         "title": "Denetim",
@@ -168,19 +187,19 @@
       "description": "Next Yeminli Mali Müşavirlik, müşterilerine vergi danışmanlığı, denetim, danışmanlık ve diğer hizmetler sunmaktadır.",
       "tax": {
         "title": "Vergi Danışmanlığı",
-        "description": "Vergi danışmanlığı hizmetlerimiz hakkında detaylı bilgi alın."
+        "description": "Vergi danışmanlığı hizmetlerimiz ile müşterilerimize kurumsal ve bireysel vergi planlaması, vergi uyuşmazlıkları çözümü ve teşvikler konusunda kapsamlı danışmanlık sunuyoruz. Ayrıca, vergi denetimlerinde destek ve yurt dışı vergi danışmanlığı hizmetlerimiz de bulunmaktadır."
       },
       "audit": {
         "title": "Denetim",
-        "description": "KGK, SPK, EPDK, Kalkınma Ajansları, AB projeleri, UFRS, Due Diligence, TFF denetimleri."
+        "description": "Denetim hizmetlerimiz, KGK, SPK, EPDK, Kalkınma Ajansları, AB projeleri, UFRS, Due Diligence ve TFF denetimleri gereksinimlerine uygun olarak finansal tabloların denetlenmesi ve raporlanmasını kapsamaktadır. Ayrıca, özel amaçlı denetimler ve uygunluk denetimleri de sunmaktayız."
       },
       "advisory": {
         "title": "Danışmanlık",
-        "description": "Danışmanlık hizmetlerimiz hakkında detaylı bilgi alın."
+        "description": "Danışmanlık hizmetlerimiz kapsamında şirketlerin muhasebe sistemlerinin kurulumu ve yeniden yapılandırılması, iç kontrol sistemlerinin oluşturulması, şirket birleşme, devralma ve bölünme işlemleri ile sermaye piyasası ve sosyal güvenlik mevzuatı danışmanlığı yer almaktadır."
       },
       "other": {
         "title": "Diğer Hizmetler",
-        "description": "Diğer hizmetlerimiz hakkında detaylı bilgi alın."
+        "description": "Diğer hizmetlerimiz arasında devlet destek ve teşvik danışmanlığı, KDV iade işlemleri, hile denetimi, uygunluk denetimi ve şirket kuruluş işlemleri bulunmaktadır. Ayrıca, eğitim hizmetleri ve uluslararası finansal raporlama standartlarına uygun raporlama hizmetleri de vermekteyiz."
       }
     },
     "ourIndustries": {

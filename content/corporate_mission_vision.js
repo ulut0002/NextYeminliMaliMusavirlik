@@ -9,6 +9,7 @@ const corporateMissionVisionPage = {
       items: [{ text: "corporate_missionVision.vision.description" }],
     },
   },
+
   default: {
     mission: {
       title: "corporate_missionVision.mission.title",

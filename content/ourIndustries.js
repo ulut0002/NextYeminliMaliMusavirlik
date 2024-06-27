@@ -91,4 +91,22 @@ const ourIndustries = {
   default: ourIndustries_default,
 };
 
+const ourIndustriesProduction_tr = {
+  heroTitle: "ourIndustries.production.heroTitle",
+  pageTitle: "ourIndustries.production.pageTitle",
+  pageSubtitle: "ourIndustries.production.pageSubtitle",
+
+  serviceDescriptionTitle: "ourIndustries.production.serviceDescriptionTitle",
+  serviceDescriptionText: "ourIndustries.production.serviceDescriptionText",
+
+  areasOfExpertise: [],
+  ourProcessAndApproachText: "",
+
+  image: "",
+  subTitle: "",
+  subtitle2: "",
+  content: [],
+  whoWeServeTitle: "ourIndustries.production.whoWeServe.title",
+};
+
 export { ourIndustries };
